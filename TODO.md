@@ -1,0 +1,9 @@
+- setup repo
+- use bower
+- big picture for landing page
+- video in landing page
+- google map
+- setup CMS pages (like blog posts)
+- twitter feed
+- cname domain
+- google analytics ?

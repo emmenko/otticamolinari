@@ -1,0 +1,15 @@
+---
+safe: false # disable custom plugins
+timezone: Europe/Berlin
+encoding: utf-8
+exclude:
+- Gemfile
+- Gemfile.lock
+- Rakefile
+highlighter: pygments
+pygments: true
+permalink: none
+markdown: redcarpet
+title: "Ottica Molinari - Stile e Benessere Visivo"
+description: "Ottica Molinari: optometria comportamentale, visione e postura, training visivo, sport vision, contattologia, ipovisione."
+domain: otticamolinari.it
