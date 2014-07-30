@@ -7,7 +7,6 @@ exclude:
 - Gemfile.lock
 - Rakefile
 highlighter: pygments
-pygments: true
 permalink: none
 markdown: redcarpet
 title: "Ottica Molinari - Stile e Benessere Visivo"
