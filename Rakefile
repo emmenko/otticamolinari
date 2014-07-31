@@ -4,11 +4,14 @@ require 'tmpdir'
 task :default => [:server]
 
 task :build do
-  sh "mkdir -p ./assets/vendor/bootstrap"
-  sh "cp -R ./bower_components/bootstrap/dist/* ./assets/vendor/bootstrap"
-  sh "mkdir -p ./assets/vendor/jquery"
-  sh "cp ./bower_components/jquery/dist/* ./assets/vendor/jquery"
-  sh "cp ./bower_components/jquery.easing/js/* ./assets/vendor/jquery"
+  mkdir_p "assets/vendor/bootstrap"
+  mkdir_p "assets/vendor/font-awesome"
+  mkdir_p "assets/vendor/jquery"
+  cp_r "bower_components/bootstrap/dist/.", "assets/vendor/bootstrap"
+  cp_r "bower_components/font-awesome/css/.", "assets/vendor/font-awesome/css"
+  cp_r "bower_components/font-awesome/fonts/.", "assets/vendor/font-awesome/fonts"
+  cp_r "bower_components/jquery/dist/.", "assets/vendor/jquery"
+  cp_r "bower_components/jquery.easing/js/.", "assets/vendor/jquery"
 end
 
 desc "Starts a local server"
