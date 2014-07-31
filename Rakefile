@@ -3,8 +3,16 @@ require 'tmpdir'
 
 task :default => [:server]
 
+task :build do
+  sh "mkdir -p ./assets/vendor/bootstrap"
+  sh "cp -R ./bower_components/bootstrap/dist/* ./assets/vendor/bootstrap"
+  sh "mkdir -p ./assets/vendor/jquery"
+  sh "cp ./bower_components/jquery/dist/* ./assets/vendor/jquery"
+  sh "cp ./bower_components/jquery.easing/js/* ./assets/vendor/jquery"
+end
+
 desc "Starts a local server"
-task :server do
+task :server => [:build] do
   sh "jekyll serve --watch"
 end
 
