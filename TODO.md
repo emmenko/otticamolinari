@@ -7,3 +7,5 @@
 - twitter feed
 - cname domain
 - google analytics ?
+- robots.txt
+- sitemap

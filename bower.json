@@ -1,0 +1,22 @@
+{
+  "name": "otticamolinari",
+  "version": "0.1.0",
+  "authors": [
+    "Nicola Molinari <emmenko@gmail.com>"
+  ],
+  "description": "Ottica Molinari website",
+  "license": "MIT",
+  "homepage": "http://www.otticamolinari.it",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery.easing": "~1.3.0"
+  }
+}

@@ -6,6 +6,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - Rakefile
+- bower_components
+- bower.json
 highlighter: pygments
 permalink: none
 markdown: redcarpet
