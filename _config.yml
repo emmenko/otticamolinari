@@ -1,5 +1,5 @@
 ---
-safe: false # disable custom plugins
+safe: true # disable custom plugins
 timezone: Europe/Berlin
 encoding: utf-8
 exclude:
