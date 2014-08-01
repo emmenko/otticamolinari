@@ -62,6 +62,8 @@ a { color: $primary;
   }
 }
 
+.gm-style .gm-style-iw { color: initial; }
+
 @media(min-width:767px) {
   .navbar { padding: 20px 0; border-bottom: none; letter-spacing: 1px; background: transparent;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
