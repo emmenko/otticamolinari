@@ -19,16 +19,16 @@ task :server => [:build] do
   sh "jekyll serve --watch"
 end
 
-desc "Generate and publish website to `master`"
+desc "Generate and publish website to `gh-pages`"
 task :publish => [:build] do
   Dir.mktmpdir do |tmp|
     pwd = Dir.pwd
-    sh "git clone -b master --single-branch git@github.com:emmenko/otticamolinari.git #{tmp}"
+    sh "git clone -b gh-pages --single-branch git@github.com:emmenko/otticamolinari.git #{tmp}"
     cp_r "_site/.", tmp
     Dir.chdir tmp
     sh "git add -A"
     sh "git commit -m 'Website generated at #{Time.now.utc}'"
-    sh "git push -f origin master"
+    sh "git push -f origin gh-pages"
     Dir.chdir pwd
   end
 end
