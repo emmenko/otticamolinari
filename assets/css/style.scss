@@ -36,6 +36,32 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   p { margin: 0 0 35px; font-size: 20px; line-height: 1.6; }
 }
 
+a {
+  &.video-link { color: $white;
+    i {
+      font-size: 90px;
+    }
+    i.animated {
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 1s;
+      -moz-transition-property: -moz-transform;
+      -moz-transition-duration: 1s;
+    }
+    &:hover {
+      i.animated {
+        -webkit-animation-name: pulse;
+        -moz-animation-name: pulse;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+      }
+    }
+  }
+}
+
 .navbar-custom { margin-bottom: 0; border-bottom: 3px solid $primary; text-transform: uppercase;
   font-family: $font-family; font-weight: 500; background-color: $white;
 
@@ -122,24 +148,6 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
     outline: none;
     color: $white;
     background: fade($white, 10%);
-  }
-  i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-  }
-  &:hover {
-    i.animated {
-      -webkit-animation-name: pulse;
-      -moz-animation-name: pulse;
-      -webkit-animation-duration: 1.5s;
-      -moz-animation-duration: 1.5s;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-    }
   }
 }
 
