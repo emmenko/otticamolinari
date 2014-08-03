@@ -1,0 +1,33 @@
+---
+layout: master
+---
+
+<section class="container content-section" data-view="services">
+  <div class="row">
+    <div class="col-lg-3">
+      <div>
+        <ul class="nav bs-docs-sidenav">
+          <li>
+            <a href="#overview">Optometria comportamentale</a>
+            <ul class="nav">
+              {% for post in site.category.optometria %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <a href="#overview">Visione e Postura</a>
+            <ul class="nav">
+              {% for post in site.category.postura %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      {{ content }}
+    </div>
+  </div>
+</section>

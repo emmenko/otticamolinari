@@ -273,3 +273,13 @@ img::selection { background: transparent; }
 img::-moz-selection { background: transparent; }
 
 body { webkit-tap-highlight-color: fade($white, 20%); }
+
+*[data-view=services] {
+  .col-lg-3, .col-lg-9 { float: left; }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+}
