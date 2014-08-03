@@ -131,7 +131,6 @@ google.maps.event.addDomListener window, 'load', ->
 
   # Places
   createMarker = (place) ->
-    console.log place
     placeLoc = place.geometry.location
     marker = new google.maps.Marker
       map: map
