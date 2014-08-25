@@ -27,3 +27,5 @@ In quest'ultimo caso le lenti vengono portate durante il sonno e al mattino poss
 Nella maggior parte dei casi l'effetto correttivo dura 24 ore. Il porto notturno ha il vantaggio di eliminare le componenti ambientali (polvere, vento, aria condizionata, attività sportive o professionali) che possono causare fastidio durante il giorno e la velocità del rimodellamento è incrementata dalla pressione esercitata dalle palpebre chiuse.
 
 Per il porto notturno si utilizzano materiali studiati appositamente, con elevatissima permeabilità all'ossigeno per garantire la sufficiente ossigenazione alla cornea anche a palpebre chiuse.
+
+![Ortocheratologia](/assets/img/material/ortocheratologia_small.jpg)

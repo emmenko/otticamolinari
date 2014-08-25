@@ -13,3 +13,6 @@ L’Optometria si fonda sul concetto che la visione è una funzione cui partecip
 ### Chi è l'Optometrista
 
 L’Optometrista è il professionista che esamina il processo visivo nei suoi aspetti funzionali e comportamentali, con metodi oggettivi e soggettivi avvalendosi delle leggi dell’ottica fisica, della fisiologia oculare, dell’optometria e di tutti i mezzi strumentali utili che l’evoluzione tecnico-scientifica mette a sua disposizione.
+
+#### Referenze
+- [Optometric Extension Program Foundation](http://www.oepf.org/)

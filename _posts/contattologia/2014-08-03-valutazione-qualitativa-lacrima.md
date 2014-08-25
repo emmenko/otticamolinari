@@ -25,6 +25,14 @@ Ogni singolo strato svolge una sua specifica funzione. Quindi, la riduzione o al
 
 Le cause sono di varia natura ma generalmente si possono suddividere in 2 categorie:
 
-Fattori comportamentali che dipendono dallo stile di vita  e che determinano sintomi occasionali.
+- Fattori comportamentali che dipendono dallo stile di vita  e che determinano sintomi occasionali.
+- Fattori di predisposizione che determinano un maggior rischio di sviluppare una forma cronica.
 
-Fattori di predisposizione che determinano un maggior rischio di sviluppare una forma cronica.
+La valutazione qualitativa della lacrima è un test basato sull'osservazione della felcizzazione della lacrima e ci indica se ci sono alterazioni della struttura del film lacrimale, sia in quantità che qualità.
+
+E' un valido aiuto a tutte quelle persone che hanno problemi di DISLACRIMIA, che portino o non portino lenti a contatto.
+
+![Denaturazione proteica discontinua](/assets/img/material/denaturazione-proteica-discontinua-01.jpg)
+![Denaturazione proteica discontinua](/assets/img/material/denaturazione-proteica-discontinua-02.jpg)
+
+> _Il test si esegue su appuntamento presso il nostro studio._

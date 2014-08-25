@@ -28,3 +28,5 @@ L’Analisi Visiva è il modello operativo utilizzato per  valutare le caratteri
 
 L’Optometrista comportamentale verifica le abilità visuo-posturali, oculomotorie e visuo-spaziali. In questo modo è possibile verificare la qualità della percezione visiva, la sua influenza sul sistema tonico posturale, l'armonia dei comportamenti visuo-motori e visuo-percettivi.
 
+#### Referenze
+- [Analisi visiva comportamentale dell'O.E.P.](/assets/downloads/Euvision-Numero1-2005_web.pdf)
