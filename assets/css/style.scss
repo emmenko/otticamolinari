@@ -103,19 +103,14 @@ a {
 
 @media(min-width:767px) {
   .navbar { padding: 20px 0; letter-spacing: 1px; background: $white; @include transition(padding 0.5s ease-in-out); }
-
   .top-nav-collapse { padding: 0; }
 }
 
 .intro { display: table; width: 100%; height: auto; padding: 100px 0; text-align: center; color: $white;
   background: url(../img/intro-bkg.png) no-repeat bottom center scroll; background-color: $black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
   .intro-body { display: table-cell; vertical-align: middle;
     .brand-heading { font-size: 40px; }
-
     .intro-text { font-size: 18px; }
   }
 }
@@ -124,31 +119,15 @@ a {
   .intro { height: 100%; padding: 0;
     .intro-body {
       .brand-heading { font-size: 60px; }
-
       .intro-text { font-size: 25px; }
     }
   }
 }
 
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid $white;
-  border-radius: 35px;
-  font-size: 40px;
-  color: $white;
-  background: transparent;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
+.btn-circle { width: 70px; height: 70px; margin-top: 15px; padding: 7px 16px; border: 2px solid $white;
+  border-radius: 35px; font-size: 40px; color: $white; background: transparent; @include transition(background .3s ease-in-out);
   &:hover,
-  &:focus {
-    outline: none;
-    color: $white;
-    background: fade($white, 10%);
-  }
+  &:focus { outline: none; color: $white; background: fade($white, 10%); }
 }
 
 .bs-callout { padding: 20px; margin: 20px 0; border: 0; border-left: 5px solid;
@@ -161,37 +140,15 @@ a {
 }
 
 @-webkit-keyframes pulse {
-  0 {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+  0 { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
 }
 
 @-moz-keyframes pulse {
-  0 {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
+  0 { -moz-transform: scale(1); transform: scale(1); }
+  50% { -moz-transform: scale(1.2); transform: scale(1.2); }
+  100% { -moz-transform: scale(1); transform: scale(1); }
 }
 
 .content-section { padding-top: 100px; }
@@ -276,10 +233,10 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
 
 *[data-view=services] {
   .col-lg-3, .col-lg-9 { float: left; }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-9 {
-    width: 75%;
+  .col-lg-3 { width: 25%; }
+  .col-lg-9 { width: 75%; }
+  .docs-sidenav {
+    li > a { padding: 5px 15px; }
+    > li { margin-bottom: 10px; }
   }
 }

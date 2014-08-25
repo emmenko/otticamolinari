@@ -6,19 +6,51 @@ layout: master
   <div class="row">
     <div class="col-lg-3">
       <div>
-        <ul class="nav bs-docs-sidenav">
+        <ul class="nav docs-sidenav">
           <li>
-            <a href="#overview">Optometria comportamentale</a>
+            <label>Optometria comportamentale</label>
             <ul class="nav">
-              {% for post in site.category.optometria %}
+              {% for post in site.categories.optometria %}
                 <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
           <li>
-            <a href="#overview">Visione e Postura</a>
+            <label>Visione e Postura</label>
             <ul class="nav">
-              {% for post in site.category.postura %}
+              {% for post in site.categories.postura %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <label>Training Visivo</label>
+            <ul class="nav">
+              {% for post in site.categories.training %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <label>Sport Vision</label>
+            <ul class="nav">
+              {% for post in site.categories.sport %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <label>Contattologia</label>
+            <ul class="nav">
+              {% for post in site.categories.contattologia %}
+                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <label>Ipovisione</label>
+            <ul class="nav">
+              {% for post in site.categories.ipovisione %}
                 <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
