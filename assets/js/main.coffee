@@ -12,11 +12,26 @@ $(window).scroll ->
 # jQuery for page scrolling feature - requires jQuery Easing plugin
 $ ->
   $('a.page-scroll').bind 'click', (evt) ->
+    evt.preventDefault()
     $anchor = $(@)
     $('html, body').stop().animate
       scrollTop: $($anchor.attr('href')).offset().top
     , 1500, 'easeInOutExpo'
+
+  $('.video-play').on 'click', (evt) ->
     evt.preventDefault()
+    $el = $(@)
+    videoId = $el.data('video-id')
+    $('body').append """
+    <div class="previewer">
+      <div>
+        <iframe src="//player.vimeo.com/video/#{videoId}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="close"></div>
+    </div>
+    """
+
+  $('body').on 'click', '.previewer .close', -> $('.previewer').remove()
 
 # Get the HTML DOM element that will contain your map
 # We are using a div with id="map" seen below in the <body>
