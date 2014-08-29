@@ -103,7 +103,7 @@ a {
 
 @media(min-width:767px) {
   .navbar { padding: 20px 0; letter-spacing: 1px; background: $white; @include transition(padding 0.5s ease-in-out); }
-  .top-nav-collapse { padding: 0; }
+  .top-nav-collapse { padding: 5px 0; }
 }
 
 .intro { display: table; width: 100%; height: auto; padding: 100px 0; text-align: center; color: $white;
