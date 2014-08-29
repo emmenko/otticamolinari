@@ -32,7 +32,7 @@
     <![endif]-->
   </head>
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id="page-top" data-target=".navbar-fixed-top" data-page-dir="{{ page.dir }}">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -62,16 +62,16 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a class="page-scroll" href="#about">Chi siamo</a>
+                  <a class="page-scroll" data-target="#about" href="/#about">Chi siamo</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#timetable">Orari</a>
+                  <a class="page-scroll" data-target="#timetable" href="/#timetable">Orari</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#contact">Contatto</a>
+                  <a class="page-scroll" data-target="#contact" href="/#contact">Contatto</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#location">Dove siamo</a>
+                  <a class="page-scroll" data-target="#location" href="/#location">Dove siamo</a>
                 </li>
               </ul>
             </li>

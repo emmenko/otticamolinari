@@ -11,3 +11,4 @@ x setup CMS pages (like blog posts)
 - prose.io for editing content
 - landing page servizi
 - chi-siamo page
+- google business (https://plus.google.com/u/2/b/106788851645449775572/dashboard/overview/getstarted?hl=en)

@@ -12,11 +12,13 @@ $(window).scroll ->
 # jQuery for page scrolling feature - requires jQuery Easing plugin
 $ ->
   $('a.page-scroll').bind 'click', (evt) ->
-    evt.preventDefault()
-    $anchor = $(@)
-    $('html, body').stop().animate
-      scrollTop: $($anchor.attr('href')).offset().top
-    , 500
+    currentPath = $('body').data('page-dir')
+    if currentPath is '/'
+      evt.preventDefault()
+      target = $(@).data('target')
+      $('html, body').stop().animate
+        scrollTop: $(target).offset().top
+      , 500
 
   $('.video-play').on 'click', (evt) ->
     evt.preventDefault()

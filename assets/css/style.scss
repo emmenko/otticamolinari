@@ -37,7 +37,7 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 }
 
 a {
-  &.video-link { color: $white;
+  &.video-link { color: $white; display: block;
     i {
       font-size: 90px;
     }
@@ -48,6 +48,7 @@ a {
       -moz-transition-duration: 1s;
     }
     &:hover {
+      cursor: pointer;
       i.animated {
         -webkit-animation-name: pulse;
         -moz-animation-name: pulse;
