@@ -16,7 +16,7 @@ $ ->
     $anchor = $(@)
     $('html, body').stop().animate
       scrollTop: $($anchor.attr('href')).offset().top
-    , 1500
+    , 500
 
   $('.video-play').on 'click', (evt) ->
     evt.preventDefault()
