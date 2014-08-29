@@ -10,3 +10,4 @@ x setup CMS pages (like blog posts)
 - sitemap
 - prose.io for editing content
 - landing page servizi
+- chi-siamo page
