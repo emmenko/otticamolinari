@@ -1,11 +1,12 @@
-- setup repo
-- use bower
+x setup repo
 - big picture for landing page
-- video in landing page
-- google map
-- setup CMS pages (like blog posts)
+x video in landing page
+x google map
+x setup CMS pages (like blog posts)
 - twitter feed
-- cname domain
+- ALIAS domain (https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider)
 - google analytics ?
 - robots.txt
 - sitemap
+- prose.io for editing content
+- landing page servizi
