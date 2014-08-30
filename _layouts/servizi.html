@@ -11,7 +11,7 @@ layout: master
             <label>Optometria comportamentale</label>
             <ul class="nav">
               {% for post in site.categories.optometria %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -19,7 +19,7 @@ layout: master
             <label>Visione e Postura</label>
             <ul class="nav">
               {% for post in site.categories.postura %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -27,7 +27,7 @@ layout: master
             <label>Training Visivo</label>
             <ul class="nav">
               {% for post in site.categories.training %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -35,7 +35,7 @@ layout: master
             <label>Sport Vision</label>
             <ul class="nav">
               {% for post in site.categories.sport %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -43,7 +43,7 @@ layout: master
             <label>Contattologia</label>
             <ul class="nav">
               {% for post in site.categories.contattologia %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
@@ -51,7 +51,7 @@ layout: master
             <label>Ipovisione</label>
             <ul class="nav">
               {% for post in site.categories.ipovisione %}
-                <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
