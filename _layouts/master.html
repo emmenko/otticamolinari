@@ -10,13 +10,13 @@
     <meta name="author" content="Nicola Molinari">
     <link rel="author" href="http://emmenko.github.io/" title="Nicola Molinari (emmenko) - Full stack Web Developer"/>
 
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.base_path }}/assets/img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="{{ site.base_path }}/assets/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
             <i class="fa fa-bars"></i>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/assets/img/logo_583x190-small.png">
+            <img src="{{ site.base_path }}/assets/img/logo_583x190-small.png">
           </a>
         </div>
 
@@ -101,7 +101,14 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB5TdOhkJwY-sBPfGpWtua7l7KoJCgNkZA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ site.base_path }}/assets/js/main.js"></script>
+
+    <div class="previewer" style="display:none;">
+      <div class="video"></div>
+      <div class="close">
+        <img src="{{ site.base_path }}/assets/img/close.svg">
+      </div>
+    </div>
 
   </body>
 

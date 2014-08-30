@@ -24,16 +24,15 @@ $ ->
     evt.preventDefault()
     $el = $(@)
     videoId = $el.data('video-id')
-    $('body').append """
-    <div class="previewer">
-      <div>
-        <iframe src="//player.vimeo.com/video/#{videoId}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      <div class="close"></div>
-    </div>
+    $previewer = $('.previewer')
+    $previewer.find('.video').empty().append """
+      <iframe src="//player.vimeo.com/video/#{videoId}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     """
+    $previewer.show()
 
-  $('body').on 'click', '.previewer .close', -> $('.previewer').remove()
+  $('body').on 'click', '.previewer .close', ->
+    $('.previewer').find('.video').empty()
+    $('.previewer').hide()
 
 # Get the HTML DOM element that will contain your map
 # We are using a div with id="map" seen below in the <body>

@@ -32,7 +32,7 @@ La valutazione qualitativa della lacrima è un test basato sull'osservazione del
 
 E' un valido aiuto a tutte quelle persone che hanno problemi di DISLACRIMIA, che portino o non portino lenti a contatto.
 
-![Denaturazione proteica discontinua](/assets/img/material/denaturazione-proteica-discontinua-01.jpg)
-![Denaturazione proteica discontinua](/assets/img/material/denaturazione-proteica-discontinua-02.jpg)
+![Denaturazione proteica discontinua]({{ site.base_path }}/assets/img/material/denaturazione-proteica-discontinua-01.jpg)
+![Denaturazione proteica discontinua]({{ site.base_path }}/assets/img/material/denaturazione-proteica-discontinua-02.jpg)
 
 > _Il test si esegue su appuntamento presso il nostro studio._

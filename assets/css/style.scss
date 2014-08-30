@@ -248,8 +248,8 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
   @include transition(0.5s); cursor: pointer; text-align: center; display: table;
   div { display: table-cell; vertical-align: middle; }
   iframe { width: 1024px; height: 576px; }
-  .close { background: url('/assets/img/close.svg') no-repeat center; position: fixed; top: 150px; right: 27px;
-    font-size: 30px; opacity: 0.3; cursor: pointer; display: block; height: 45px; width: 45px;
+  .close { position: fixed; top: 150px; right: 27px; font-size: 30px; opacity: 0.3; cursor: pointer;
+    display: block; height: 45px; width: 45px;
     &:hover { opacity: 1; }
   }
 }

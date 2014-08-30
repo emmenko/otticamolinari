@@ -28,4 +28,4 @@ Nella maggior parte dei casi l'effetto correttivo dura 24 ore. Il porto notturno
 
 Per il porto notturno si utilizzano materiali studiati appositamente, con elevatissima permeabilità all'ossigeno per garantire la sufficiente ossigenazione alla cornea anche a palpebre chiuse.
 
-![Ortocheratologia](/assets/img/material/ortocheratologia_small.jpg)
+![Ortocheratologia]({{ site.base_path }}/assets/img/material/ortocheratologia_small.jpg)

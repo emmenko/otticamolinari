@@ -6,7 +6,7 @@ category: contattologia
 
 ### Cos'è
 
-![Topografia](/assets/img/material/topografia.jpg)
+![Topografia]({{ site.base_path }}/assets/img/material/topografia.jpg)
 
 La topografia corneale (o mappa corneale) è un metodo di lettura della curvatura della cornea, assistito a computer. E' un esame diagnostico insostituibile per lo studio di numerose patologie corneali, in chirurgia refrattiva, in contattologia nei casi di astigmatismi elevati ed in tutti i casi di irregolarità di superficie.
 
@@ -16,6 +16,6 @@ La topografia corneale consente di ottenere la migliore rappresentazione della f
 
 ### Come si effettua
 
-![Keratron Onda](/assets/img/material/keratron-onda.jpg)
+![Keratron Onda]({{ site.base_path }}/assets/img/material/keratron-onda.jpg)
 
 La procedura per eseguire una topografia corneale è estremamente semplice. In pratica lo specialista avvicina lo strumento all'occhio ed esegue lo scatto, come per una normale fotografia. L'operazione non è assolutamente pericolosa, non provoca dolore né altri tipi di fastidi. In seguito viene valutata la topografia sul monitor di un computer per verificare che non ci siano errori. Se lo scatto è stato eseguito correttamente la topografia comprende tutta la cornea e mostra gli eventuali difetti e irregolarità. A questo punto si esegue una normale stampa con una stampante a colori con tutte le informazioni sulla vostra cornea.
