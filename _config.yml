@@ -9,7 +9,7 @@ exclude:
 - bower_components
 - bower.json
 highlighter: pygments
-permalink: none
+permalink: /servizi/:categories/:title.html
 markdown: redcarpet
 title: "Ottica Molinari - Stile e Benessere Visivo"
 description: "Ottica Molinari: optometria comportamentale, visione e postura, training visivo, sport vision, contattologia, ipovisione."
