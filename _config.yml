@@ -3,6 +3,7 @@ safe: true # disable custom plugins
 timezone: Europe/Berlin
 encoding: utf-8
 exclude:
+- vendor # http://jekyllrb.com/docs/continuous-integration/#exclude-vendor
 - Gemfile
 - Gemfile.lock
 - Rakefile
