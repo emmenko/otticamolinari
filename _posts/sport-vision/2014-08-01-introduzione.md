@@ -1,7 +1,7 @@
 ---
 layout: servizi
 title: "Introduzione"
-category: sport
+category: sport-vision
 ---
 
 Sport Vision è un approccio funzionale multi-disciplinare finalizzato a condurre l'intero sistema visivo a funzionare all'apice del rendimento in relazione all'attività praticata.

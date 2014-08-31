@@ -1,7 +1,7 @@
 ---
 layout: servizi
 title: "Introduzione"
-category: training
+category: training-visivo
 ---
 
 ### Il "Visual Training" è una ginnastica oculare dolce
