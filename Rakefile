@@ -15,3 +15,9 @@ task :shipit do
   HTML::Proofer.new('./_site').run
   sh 'bundle exec travis-custom-deploy sftp service:jekyll'
 end
+
+desc 'Check HTML files'
+task :lint do
+  sh 'bundle exec jekyll build'
+  HTML::Proofer.new('./_site').run
+end
