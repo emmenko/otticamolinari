@@ -1,0 +1,10 @@
+language: ruby
+rvm: 2.0.0
+script: rake shipit
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - secure: "GAV3redZ+NTJuXtr+I4DjcPptiBr5lHo5GId+d9BuPPuEG2sOQ2YDluZDcg57SAdbJYzhXoXZhtoD+TIhKs6TgygiPwmupxxp+a3lQA0+GK1jfj1POe1R4ui8xETKunNfswmTzx3fneMbuRxo2qcKXEAt2CQ7chxIXHbGpj+ldU="
+    - secure: "Fh2YVXJrKalREGnEKFeLRlpKtR/aBjtTBGxLuNazWEcDNiRr4qXx+hhCx6PQXkRzQwgx9ibtC8lnrfFoGkHtRbHBFrowHbtwoZsxBjd4AaQaIV1rM21MCIzonQtEWUBIEUCzUvuPgm5G/q4sM+22wVFoNJ+dM5WJjbIdZaRWo+E="
+    - secure: "HTFMZAvPL4nNmZdobecMevP/yBgYe+DYUsqPHj4qveQyrOnXYMe8bQp26vWiiWoc8kFSmuZtbfSe3R0DNEdmO1cUJo5+/sSgs+PaozWq+izoXUgoCqdhMJlLUYO6uLntdtSgi3icIzihh4ihKVUBq/Wc7fXVx0pMZ47DA77YHms="
+    - secure: "G3UAXFHDtPeUB9Ut+fRAXSnDlyC81NWHrwRuMnNM5XyK9u90RADxFd6xvM/7GrzkVCYtRcIcCkP18Y/9VNPJnlkS+OXUgfJT3XNVStbAT0zuiBLS6ccFej/4hs2tVbr/NBbl3LdSlYp8ex6otHiSIuLUqRdXukJt9ymJEk/XQUQ=" # dir
