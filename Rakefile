@@ -10,9 +10,8 @@ task :server do
 end
 
 desc 'Site packaging and deploying'
-task :shipit do
+task :shipit => [:lint] do
   sh 'bundle exec jekyll build --config _config.yml,_config.prod.yml'
-  HTML::Proofer.new('./_site').run
   sh 'bundle exec travis-custom-deploy sftp service:jekyll'
 end
 
