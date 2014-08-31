@@ -10,6 +10,8 @@ exclude:
 highlighter: pygments
 permalink: /servizi/:categories/:title.html
 markdown: redcarpet
+sass:
+  sass_dir: assets/css
 title: "Ottica Molinari - Stile e Benessere Visivo"
 description: "Ottica Molinari: optometria comportamentale, visione e postura, training visivo, sport vision, contattologia, ipovisione."
 domain: otticamolinari.it
