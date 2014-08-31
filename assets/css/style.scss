@@ -259,3 +259,8 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
     iframe { width: 768px; height: 432px; }
   }
 }
+
+.quote {
+  p { text-align: right; margin: 0 0 10px; }
+  footer { padding: 0; }
+}
