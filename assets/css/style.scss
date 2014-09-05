@@ -107,19 +107,23 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   .top-nav-collapse { padding: 5px 0; }
 }
 
-.intro { display: table; width: 100%; height: auto; padding: 100px 0; text-align: center; color: $white;
-  background: url(../img/intro-bkg.png) no-repeat bottom center scroll; background-color: $black;
+.intro,
+.section-bkg { display: table; width: 100%; height: auto; text-align: center; background-color: $black;
   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+.intro { padding: 100px 0; color: $white;
+  background: url(../img/intro-bkg-bw.jpg) no-repeat bottom center scroll;
   .intro-body { display: table-cell; vertical-align: middle;
-    .brand-heading { font-size: 40px; }
+    .brand-heading { font-size: 40px; font-family: "Titillium Web"; margin-top: 20%; }
     .intro-text { font-size: 18px; }
   }
 }
+.section-bkg { padding: 125px 0; background: url(../img/store-overview.jpg) no-repeat center center scroll; }
 
 @media(min-width:767px) {
   .intro { height: 100%; padding: 0;
     .intro-body {
-      .brand-heading { font-size: 60px; }
+      .brand-heading { font-size: 55px; }
       .intro-text { font-size: 25px; }
     }
   }
@@ -164,7 +168,7 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   -o-background-size: cover;
 }
 
-#map { width: 100%; height: 200px; margin-top: 100px; }
+#map { width: 100%; height: 200px; }
 
 @media(min-width:767px) {
   .content-section { padding-top: 200px; }
@@ -249,7 +253,8 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
   background: rgba(0,0,0,0.85); background-repeat: no-repeat; background-position: center center;
   @include transition(0.5s); cursor: pointer; text-align: center; display: table;
   div { display: table-cell; vertical-align: middle; }
-  iframe { width: 1024px; height: 576px; }
+  iframe { width: 1000px; height: 460px; }
+  .video { padding-top: 150px; }
   .close { position: fixed; top: 150px; right: 27px; font-size: 30px; opacity: 0.3; cursor: pointer;
     display: block; height: 45px; width: 45px;
     &:hover { opacity: 1; }

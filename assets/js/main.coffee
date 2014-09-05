@@ -49,6 +49,9 @@ if mapElement
       # How zoomed in you want the map to start at (always required)
       zoom: 15
 
+      # Disables scrollwheel zooming on the map
+      scrollwheel: false
+
       # The latitude and longitude to center the map (always required)
       center: new google.maps.LatLng(45.663730, 12.242450) # Treviso
 
