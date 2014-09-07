@@ -127,8 +127,6 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   background-size: cover;
 }
 
-section:first-child { padding-top: 200px; }
-
 @media(min-width:767px) {
   .intro { height: 100%; padding: 0;
     .intro-body {
@@ -165,7 +163,7 @@ section:first-child { padding-top: 200px; }
   100% { -moz-transform: scale(1); transform: scale(1); }
 }
 
-.content-section { padding-top: 100px; }
+.content-section { padding-top: 30px; }
 
 .intro-icon { font-size: 10em; margin-bottom: 50px; }
 
@@ -184,6 +182,13 @@ section:first-child { padding-top: 200px; }
   margin-bottom: 30px;
   span { margin: 0 15px; font-size: 35px; color: $primary; }
   img { border: 2px solid $primary; }
+}
+
+@media(max-width:340px) {
+  .about-glasses {
+    span { display: none; }
+    img { margin-bottom: 20px; }
+  }
 }
 
 #map { width: 100%; height: 200px; }
@@ -270,6 +275,13 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
         &:hover, &.active { background-color: $primary; color: $white; }
       }
     }
+  }
+}
+
+@media(max-width:767px) {
+  *[data-view=services] {
+    .col-lg-3, .col-lg-9 { width: 100%; }
+    .col-lg-3 { margin-bottom: 30px; border-bottom: 1px solid $primary; }
   }
 }
 
