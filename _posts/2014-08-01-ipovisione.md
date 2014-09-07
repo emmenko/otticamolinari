@@ -1,7 +1,7 @@
 ---
 layout: servizi
-title: "Introduzione"
-category: ipovisione
+title: Ipovisione
+role: ipovisione
 ---
 
 ### Cos'è l'Ipovisione

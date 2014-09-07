@@ -7,54 +7,48 @@ layout: master
     <div class="col-lg-3">
       <div>
         <ul class="nav docs-sidenav">
-          <li>
-            <label>Optometria comportamentale</label>
-            <ul class="nav">
-              {% for post in site.categories.optometria %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
+          {% for post in site.posts %}
+            {% if post.role == 'optometria-comportamentale' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <ul class="nav">
+              {% for subpost in site.categories.optometria %}
+                <li class="menu-secondary">
+                  <a href="{{ site.base_path }}{{ subpost.url }}">{{ subpost.title }}</a>
+                </li>
               {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <label>Visione e Postura</label>
-            <ul class="nav">
-              {% for post in site.categories.postura %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
+              </ul>
+            </li>
+            {% elsif post.role == 'visione-e-postura' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% elsif post.role == 'training-visivo' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% elsif post.role == 'sport-vision' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% elsif post.role == 'contattologia' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <ul class="nav">
+              {% for subpost in site.categories.contattologia %}
+                <li class="menu-secondary">
+                  <a class="link-submenu" href="{{ site.base_path }}{{ subpost.url }}">{{ subpost.title }}</a>
+                </li>
               {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <label>Training Visivo</label>
-            <ul class="nav">
-              {% for post in site.categories.training-visivo %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <label>Sport Vision</label>
-            <ul class="nav">
-              {% for post in site.categories.sport-vision %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <label>Contattologia</label>
-            <ul class="nav">
-              {% for post in site.categories.contattologia %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <label>Ipovisione</label>
-            <ul class="nav">
-              {% for post in site.categories.ipovisione %}
-                <li class=""><a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
+              </ul>
+            </li>
+            {% elsif post.role == 'ipovisione' %}
+            <li class="menu-primary">
+              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+
         </ul>
       </div>
     </div>

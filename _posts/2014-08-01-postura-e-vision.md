@@ -1,7 +1,7 @@
 ---
 layout: servizi
-title: "Introduzione"
-category: postura
+title: Visione e Postura
+role: visione-e-postura
 ---
 
 L’occhio ha due funzioni, quella di vedere e quella di percepire la posizione del corpo nello spazio. Una disfunzione della percezione visiva può causare, per compensazione, uno squilibrio posturale anche grave, con insorgenza d’infiammazioni muscolari, deformazioni scheletriche e dolori e una postura scorretta può dar luogo a problemi d’oculomotricità.
