@@ -15,8 +15,8 @@ x big picture for landing page
 - google business (https://plus.google.com/u/2/b/106788851645449775572/dashboard/overview/getstarted?hl=en)
 - curriculum-vitae
 - tooltips
-- links to servizi (banner subtitle or grid under main banner)
+x links to servizi (banner subtitle or grid under main banner)
 - partners page
-- refactor categories menu
-- refactor footer (with social links buttons)
+x refactor categories menu
+x refactor footer (with social links buttons)
 - SEO
