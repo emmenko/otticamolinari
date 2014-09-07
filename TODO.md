@@ -19,3 +19,4 @@ x big picture for landing page
 - partners page
 - refactor categories menu
 - refactor footer (with social links buttons)
+- SEO

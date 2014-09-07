@@ -259,8 +259,17 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
   .col-lg-3 { width: 25%; }
   .col-lg-9 { width: 75%; }
   .docs-sidenav {
-    li > a { padding: 5px 15px; }
-    > li { margin-bottom: 10px; }
+    li {
+      padding: 5px 0;
+      &.menu-primary {  }
+      &.menu-secondary {
+        a { padding-left: 15px; }
+      }
+      a {
+        color: $primary; padding: 5px;
+        &:hover, &.active { background-color: $primary; color: $white; }
+      }
+    }
   }
 }
 

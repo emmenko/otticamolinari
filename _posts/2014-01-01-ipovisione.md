@@ -1,7 +1,7 @@
 ---
 layout: servizi
 title: Ipovisione
-role: ipovisione
+key: ipovisione
 ---
 
 ### Cos'è l'Ipovisione

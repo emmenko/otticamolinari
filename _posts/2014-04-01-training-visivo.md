@@ -1,7 +1,7 @@
 ---
 layout: servizi
 title: Training Visivo
-role: training-visivo
+key: training-visivo
 ---
 
 ### Il "Visual Training" è una ginnastica oculare dolce

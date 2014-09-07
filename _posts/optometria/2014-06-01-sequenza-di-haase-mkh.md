@@ -2,6 +2,7 @@
 layout: servizi
 title: "Sequenza di Haase MKH"
 category: optometria
+key: sequenza-haase-mkh
 ---
 
 ### Cos'è

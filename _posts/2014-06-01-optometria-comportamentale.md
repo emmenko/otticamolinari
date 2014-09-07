@@ -1,7 +1,7 @@
 ---
 layout: servizi
 title: Optometria comportamentale
-role: optometria-comportamentale
+key: optometria-comportamentale
 ---
 
 ### Cos'è l'Optometria?

@@ -8,47 +8,46 @@ layout: master
       <div>
         <ul class="nav docs-sidenav">
           {% for post in site.posts %}
-            {% if post.role == 'optometria-comportamentale' %}
+            {% if post.key == 'optometria-comportamentale' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
               <ul class="nav">
               {% for subpost in site.categories.optometria %}
                 <li class="menu-secondary">
-                  <a href="{{ site.base_path }}{{ subpost.url }}">{{ subpost.title }}</a>
+                  <a href="{{ site.base_path }}{{ subpost.url }}" class="{% if page.key == subpost.key %}active{% endif %}">{{ subpost.title }}</a>
                 </li>
               {% endfor %}
               </ul>
             </li>
-            {% elsif post.role == 'visione-e-postura' %}
+            {% elsif post.key == 'visione-e-postura' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
             </li>
-            {% elsif post.role == 'training-visivo' %}
+            {% elsif post.key == 'training-visivo' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
             </li>
-            {% elsif post.role == 'sport-vision' %}
+            {% elsif post.key == 'sport-vision' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
             </li>
-            {% elsif post.role == 'contattologia' %}
+            {% elsif post.key == 'contattologia' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
               <ul class="nav">
               {% for subpost in site.categories.contattologia %}
                 <li class="menu-secondary">
-                  <a class="link-submenu" href="{{ site.base_path }}{{ subpost.url }}">{{ subpost.title }}</a>
+                  <a href="{{ site.base_path }}{{ subpost.url }}" class="link-submenu {% if page.key == subpost.key %}active{% endif %}">{{ subpost.title }}</a>
                 </li>
               {% endfor %}
               </ul>
             </li>
-            {% elsif post.role == 'ipovisione' %}
+            {% elsif post.key == 'ipovisione' %}
             <li class="menu-primary">
-              <a href="{{ site.base_path }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.base_path }}{{ post.url }}" class="{% if page.key == post.key %}active{% endif %}">{{ post.title }}</a>
             </li>
             {% endif %}
           {% endfor %}
-
         </ul>
       </div>
     </div>
