@@ -6,7 +6,7 @@ x negozio page
 x deployment travis
 x landing page servizi
 x big picture for landing page
-- twitter feed
+x twitter feed (https://dev.twitter.com/docs/embedded-timelines)
 - ALIAS domain (https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider)
 - google analytics ?
 - robots.txt
