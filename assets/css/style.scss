@@ -8,6 +8,10 @@
   transition: $property;
 }
 
+@mixin bkg-cover() {
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+
 /*-----------------------------------------------------------------------------
 # TYPOGRAPHY
 -----------------------------------------------------------------------------*/
@@ -113,19 +117,14 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 }
 
 .intro,
-.section-bkg { display: table; width: 100%; height: auto; text-align: center; background-color: $black;
-  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-}
-.intro { padding: 100px 0; color: $white;
-  background: url(../img/intro-bkg-bw.jpg) no-repeat bottom center scroll;
+.section-bkg { display: table; width: 100%; height: auto; text-align: center; background-color: $black; }
+.intro { padding: 100px 0; color: $white; background: url(../img/intro-bkg-bw.jpg) no-repeat bottom center scroll; @include bkg-cover();
   .intro-body { display: table-cell; vertical-align: middle;
     .brand-heading { color: $white; font-size: 40px; font-family: "Titillium Web"; margin-top: 20%; }
     .intro-text { font-size: 18px; }
   }
 }
-.section-bkg { padding: 150px 0; background: url(../img/store-overview.jpg) no-repeat center top scroll;
-  background-size: cover;
-}
+.section-bkg { padding: 150px 0; background: url(../img/store-overview.jpg) no-repeat center top scroll; @include bkg-cover(); }
 
 @media(min-width:767px) {
   .intro { height: 100%; padding: 0;
@@ -298,9 +297,21 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
   }
 }
 
+@media(min-width:1499px) {
+  .previewer {
+    iframe { width: 980px; height: 540px; }
+  }
+}
+
 @media(max-width:1199px) {
   .previewer {
     iframe { width: 768px; height: 432px; }
+  }
+}
+
+@media(max-width:340px) {
+  .previewer {
+    iframe { width: 300px; height: 250px; }
   }
 }
 
