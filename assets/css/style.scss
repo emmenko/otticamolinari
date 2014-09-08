@@ -179,13 +179,13 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 
 .about-glasses {
   margin-bottom: 30px;
-  span { margin: 0 15px; font-size: 35px; color: $primary; }
+  .bridge { margin: 0 20px; font-size: 55px; color: $primary; display: inline-block; position: relative; left: 15px; }
   img { border: 2px solid $primary; }
 }
 
 @media(max-width:340px) {
   .about-glasses {
-    span { display: none; }
+    .bridge { display: none; }
     img { margin-bottom: 20px; }
   }
 }
