@@ -39,6 +39,8 @@ a.link {
   &:hover, &:focus, &:active { opacity: 1; }
 }
 
+.color-primary { color: $primary; }
+
 p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 .post-content p { text-align: justify; }
 
@@ -164,7 +166,7 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 
 .content-section { padding-top: 30px; }
 
-.intro-icon { font-size: 10em; margin-bottom: 50px; }
+.intro-icon { font-size: 6em; margin-bottom: 50px; }
 
 #services {
   background-color: $primary; color: $white;
