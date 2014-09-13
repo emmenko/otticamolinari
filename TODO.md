@@ -14,7 +14,7 @@ x refactor footer (with social links buttons)
 x robots.txt
 x google analytics
 / google business (https://plus.google.com/u/2/b/106788851645449775572/dashboard/overview/getstarted?hl=en)
-- tooltips
+x tooltips
 - SEO
 - twitter account
 - curriculum-vitae
