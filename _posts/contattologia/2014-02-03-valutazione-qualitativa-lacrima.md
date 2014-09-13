@@ -26,8 +26,8 @@ Ogni singolo strato svolge una sua specifica funzione. Quindi, la riduzione o al
 
 Le cause sono di varia natura ma generalmente si possono suddividere in 2 categorie:
 
-- Fattori comportamentali che dipendono dallo stile di vita  e che determinano sintomi occasionali.
-- Fattori di predisposizione che determinano un maggior rischio di sviluppare una forma cronica.
+- <span rel="tooltip" data-title="L'utilizzo prolungato del computer, permanenza in ambienti chiusi con aria climatizzata, sport che espongono gli occhi a cloro, acqua salata, sole, vento e smog, uso di farmaci, colliri decongestionanti o con conservanti, bevande ad alto contenuto di alccol o caffeina, utlizzo di lenti a contatto.">_Fattori comportamentali_</span> che dipendono dallo stile di vita  e che determinano sintomi occasionali.
+- <span rel="tooltip" data-title="Variazioni ormonali (peri-menopausa, menopausa), utilizzo di farmaci (per il controllo della presione, diuretici ecc.), malattie associate come il diabete, artrite reumatiche, Sindrome di Sjogren (malattaia infiammatoria cronica autoimmune che distrugge le ghiandole lacrimali), interventi chirurgici all'occhio (cataratta e refrattiva).">_Fattori di predisposizione_</span> che determinano un maggior rischio di sviluppare una forma cronica.
 
 La valutazione qualitativa della lacrima è un test basato sull'osservazione della felcizzazione della lacrima e ci indica se ci sono alterazioni della struttura del film lacrimale, sia in quantità che qualità.
 

@@ -14,9 +14,10 @@ x refactor footer (with social links buttons)
 x robots.txt
 x google analytics
 / google business (https://plus.google.com/u/2/b/106788851645449775572/dashboard/overview/getstarted?hl=en)
-- sitemap
-- prose.io for editing content
-- curriculum-vitae
 - tooltips
 - SEO
+- twitter account
+- curriculum-vitae
+- prose.io for editing content
+- sitemap
 - ALIAS domain (https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider)

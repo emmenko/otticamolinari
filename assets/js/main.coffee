@@ -32,6 +32,8 @@ $ ->
         scrollTop: $(target).offset().top
       , 500
 
+  $('*[rel=tooltip]').tooltip()
+
   $('.video-play').on 'click', (evt) ->
     evt.preventDefault()
     $el = $(@)
