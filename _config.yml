@@ -7,6 +7,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - Rakefile
+- README.md
+- TODO.md
 highlighter: pygments
 permalink: /servizi/:categories/:title.html
 markdown: redcarpet
