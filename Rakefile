@@ -16,7 +16,7 @@ task :lint do
 end
 
 desc 'Site packaging and deploying'
-task :shipit => [:lint] do
+task :shipit do
   sh 'bundle exec jekyll build'
   sh 'bundle exec travis-custom-deploy sftp service:jekyll'
 end
