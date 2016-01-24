@@ -1,6 +1,8 @@
 ---
 ---
 
+DISMISSED_COOKIE = 'cookieconsent_dismissed'
+
 parallaxOnScroll = (el, offset = 100) ->
   return if el.length is 0
   viewportHeight = $(window).height() - offset
@@ -47,6 +49,18 @@ $ ->
   $('body').on 'click', '.previewer .close', ->
     $('.previewer').find('.video').empty()
     $('.previewer').hide()
+
+  if (!~document.cookie.indexOf(DISMISSED_COOKIE))
+    $('#cookie-banner').css('display', 'block')
+    document.getElementById('dismiss-cookie-banner').addEventListener 'click', ->
+      document.cookie = "#{DISMISSED_COOKIE}=yes; expires=#{new Date('2099-12-31').toUTCString()}; path=/"
+      document.getElementById('cookie-banner').remove()
+      return
+
+# Remove cookie policy banner if user already acknowledged it
+if (~document.cookie.indexOf(DISMISSED_COOKIE))
+  document.getElementById('cookie-banner').remove()
+
 
 # Get the HTML DOM element that will contain your map
 # We are using a div with id="map" seen below in the <body>
