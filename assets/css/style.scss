@@ -184,11 +184,20 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   .left { float: left; }
   .right { float: right; }
 
-  a {
+  a.button {
     cursor: pointer; padding: 7px 20px; text-decoration: none;
     background-color: #f1d600; color: $black; border-radius: 4px;
   }
-  a:hover { background-color: $white; }
+  a.button:hover { background-color: $white; }
+  a.link { color: $white; }
+}
+
+.cookie-section {
+  margin-bottom: 35px;
+  address { font-size: 16px; line-height: 1.2; }
+  h2 { font-size: 20px; letter-spacing: initial; margin-bottom: 20px; }
+  h4 { font-size: 16px; margin: 20px 0 10px; }
+  p { font-size: 14px; line-height: 1; margin: 0; }
 }
 
 #services {
