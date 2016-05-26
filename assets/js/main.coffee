@@ -176,6 +176,7 @@ if mapElement
     #   map: map
     #   icon: image
 
+    infowindow = new google.maps.InfoWindow()
     # Places
     createMarker = (place) ->
       placeLoc = place.geometry.location
@@ -183,15 +184,23 @@ if mapElement
         map: map
         position: place.geometry.location
       google.maps.event.addListener marker, 'click', ->
-        infowindow.setContent(place.name)
+        infowindow.setContent("""
+          <address>
+            <strong>Ottica Molinari</strong><br>
+            Piazza della Vittoria, 11<br>
+            31100 Treviso (TV), Italy<br>
+            <abbr title="Telefono">T:</abbr> +39 0422 582347<br>
+            <a href="mailto:#">info@otticamolinari.it</a>
+          </address>
+          <a class="link" target="_blank" href="#{place.url}">Vedi in Google Maps</a>
+        """)
         infowindow.open(map, this)
 
     searchPlaceRequest =
-      # location: myLatLng,
-      # radius: 100,
-      # name: 'Ottica Molinari'
+      location: myLatLng,
+      radius: 100,
+      name: 'Ottica Molinari'
       placeId: 'ChIJZbYHjio2eUcR59drO_RObuc'
-    infowindow = new google.maps.InfoWindow()
     service = new google.maps.places.PlacesService(map)
     service.getDetails searchPlaceRequest, (place, status) ->
       if status is google.maps.places.PlacesServiceStatus.OK
