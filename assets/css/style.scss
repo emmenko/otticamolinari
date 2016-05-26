@@ -18,8 +18,9 @@
 
 /* Colors */
 $primary: #011C35;
-$white: #ffffff;
+$white: #FFF;
 $black: #000;
+$grey: #D4D4D4;
 
 $font-family: "Rajdhani", "Titillium Web", "Open Sans", sans-serif;
 
@@ -309,9 +310,11 @@ body { webkit-tap-highlight-color: fade($white, 20%); }
   .docs-sidenav {
     li {
       padding: 5px 0;
-      &.menu-primary {  }
+      &.menu-primary {
+        > a { border-bottom: 1px solid $grey; }
+      }
       &.menu-secondary {
-        a { padding-left: 15px; }
+        border-left: 1px solid $grey; margin-left: 15px;
       }
       a {
         color: $primary; padding: 5px;
