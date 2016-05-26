@@ -183,6 +183,7 @@ if mapElement
       marker = new google.maps.Marker
         map: map
         position: place.geometry.location
+        title: place.name
       google.maps.event.addListener marker, 'click', ->
         infowindow.setContent("""
           <address>
