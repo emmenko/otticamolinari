@@ -195,10 +195,18 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   background-color: $primary; color: $white;
   h2, h4 { color: $white; }
   .service-row { margin-bottom: 30px; }
-  .service-item { margin-bottom: 30px; }
+  .service-item {
+    margin-bottom: 30px;
+    a {
+      display: block;
+      .service-icon { color: $white; }
+    }
+  }
   .service-icon { font-size: 40px; margin-bottom: 10px; }
-  .small-description { font-size: 16px; line-height: 16px;
-    color: $white; opacity: 0.6; margin-bottom: 20px; }
+  .small-description {
+    font-size: 16px; line-height: 16px;
+    color: $white; opacity: 0.6; margin-bottom: 20px;
+  }
   a.link { color: $white; }
 }
 
