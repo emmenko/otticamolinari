@@ -2,22 +2,53 @@
 layout: master
 ---
 
-<!-- Intro Header -->
-<header class="intro">
-  <div class="intro-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1 class="brand-heading">Stile &amp; Benessere Visivo</h1>
-          <p class="intro-text">Optometria comportamentale, Visione e Postura, Training Visivo, Sport Vision, Contattologia, Ipovisione.</p>
-          <span data-video-id="101507282" class="video-link video-play">
-            <i class="fa fa-play-circle-o animated"></i>
-          </span>
-        </div>
+<div id="intro-banners" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#intro-banners" data-slide-to="0" class="active"></li>
+    <li data-target="#intro-banners" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="item-overlay">
+        <img src="{{ site.base_path }}/assets/img/iprofiler_big.jpg" />
+      </div>
+      <div class="carousel-caption">
+        <h1>Scopri una nuova era della tecnologia della visione</h1>
+        <p>
+          Lasciati consigliare le migliori lenti per una visione più nitida, anche di sera, grazie al nuovo strumento <i>ZEISS i.Profiler<sup>®plus</sup></i>
+        </p>
+        <p>
+          <a href="{{ site.base_path }}/servizi/optometria/lenti-iscription-iprofiler.html" title="Lenti i.Scription di ZEISS">Leggi come funziona</a> e <a class="page-scroll" data-target="#contact" href="{{ site.base_path }}/#contact" title="Contatto">prenota un appuntamento</a>
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-overlay">
+        <img src="{{ site.base_path }}/assets/img/intro-bkg-bw.jpg" />
+      </div>
+      <div class="carousel-caption">
+        <h1 class="brand-heading">Stile &amp; Benessere Visivo</h1>
+        <p class="intro-text">Optometria comportamentale, Visione e Postura, Training Visivo, Sport Vision, Contattologia, Ipovisione.</p>
+        <span data-video-id="101507282" class="video-link video-play">
+          <i class="fa fa-play-circle-o animated"></i>
+        </span>
       </div>
     </div>
   </div>
-</header>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#intro-banners" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#intro-banners" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <!-- Services Section -->
 <section id="services">

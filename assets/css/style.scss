@@ -21,14 +21,19 @@ $primary: #011C35;
 $white: #FFF;
 $black: #000;
 $grey: #D4D4D4;
+$yellow: #f1d600;
+$yellowLight: lighten($yellow, 25%);
 
 $font-family: "Rajdhani", "Titillium Web", "Open Sans", sans-serif;
+
+$navbarHeight: 90px + 8px + 8px;
+$navbarHeightSmall: 60px;
 
 html { width: 100%; height: 100%; }
 
 body { width: 100%; height: 100%; font-family: $font-family; color: $black; background-color: $white;
   font-size: 18px; font-weight: 500; font-style: normal; line-height: 1; padding: 0; margin: 0;
-  -webkit-font-smoothing: antialiased; padding-top: 75px;
+  -webkit-font-smoothing: antialiased; padding-top: $navbarHeightSmall;
 }
 
 h1, h2, h3, h4, h5, h6 { margin: 0 0 35px; text-transform: uppercase; font-weight: 700;
@@ -123,9 +128,136 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 
 .gm-style .gm-style-iw { color: initial; }
 
+.nav:before,
+.navbar:before,
+.navbar-header:before,
+.navbar-collapse:before,
+.navbar > .container:before,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.navbar > .container:before { content: none; }
+
+.navbar {
+  height: $navbarHeightSmall;
+  .container {
+    padding: 4px;
+    width: 100%;
+    .navbar-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+    .navbar-brand {
+      margin: 0;
+      float: none;
+      height: 50px;
+      img { height: 50px; }
+    }
+  }
+}
+.navbar-toggle { margin: 0; }
+.navbar-custom {
+  ul.nav {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    li {
+      &.active {
+        border-bottom: 0; /*border-left: 3px solid $primary;*/
+        a {
+          &:hover, &:focus, &.active { border-left: 0; }
+        }
+      }
+      a {
+        &:hover,
+        &:focus,
+        &.active { border-bottom: 0; /*border-left: 3px solid $primary;*/ }
+      }
+    }
+    .open > a { background: none; border: 0; }
+  }
+}
+.navbar-nav > li > a {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar-collapse {
+  background-color: $white;
+  &.collapsing,
+  &.in {
+    ul.nav {
+      display: block;
+    }
+  }
+}
+
 @media(min-width:767px) {
-  .navbar { padding: 20px 0; letter-spacing: 1px; background: $white; @include transition(padding 0.5s ease-in-out); }
-  .top-nav-collapse { padding: 5px 0; }
+  .navbar { padding: 0; letter-spacing: 1px; background: $white; @include transition(padding 0.5s ease-in-out); }
+  // .top-nav-collapse { padding: 5px 0; }
+  ul.banner-social-buttons {
+    li { display: block; margin-bottom: 20px; padding: 0;
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
+.carousel-caption {
+  bottom: 0; top: 0; left: 15%; right: 15%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  h1 { color: $white; font-size: 40px; font-family: "Titillium Web"; }
+  p { font-size: 18px; }
+}
+.carousel-inner {
+  max-height: calc(100vh - #{$navbarHeight}); min-height: 260px;
+  .item { max-height: calc(100vh - #{$navbarHeight}); min-height: 260px; }
+  .item-overlay {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.3);
+    img {
+      position:relative;
+      z-index:-1;
+      display:block;
+      width: 100% \9;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  a {
+    color: $yellow;
+    &:hover { color: $yellowLight; }
+  }
+}
+@media(min-width:1024px) {
+  .carousel-caption {
+    h1 { font-size: 55px; }
+    p { font-size: 25px; }
+  }
+}
+@media(max-width:767px) {
+  .carousel-caption {
+    h1 { font-size: 30px; }
+    p { font-size: 18px; }
+  }
+}
+@media(max-width:667px) {
+  .carousel-caption {
+    h1 { font-size: 20px; }
+    p { font-size: 14px; }
+  }
+}
+@media(max-width:414px) {
+  .carousel-caption {
+    h1 { font-size: 20px; }
+    p { font-size: 14px; }
+  }
+  .carousel-inner {
+    .item-overlay {
+      img { max-width: none; height: 100vh; }
+    }
+  }
 }
 
 .intro,
@@ -137,15 +269,6 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   }
 }
 .section-bkg { padding: 150px 0; background: url(../img/store-overview.jpg) no-repeat center top scroll; @include bkg-cover(); }
-
-@media(min-width:767px) {
-  .intro { height: 100%; padding: 0;
-    .intro-body {
-      .brand-heading { font-size: 55px; }
-      .intro-text { font-size: 25px; }
-    }
-  }
-}
 
 .btn-circle { width: 70px; height: 70px; margin-top: 15px; padding: 7px 16px; border: 2px solid $white;
   border-radius: 35px; font-size: 40px; color: $white; background: transparent; @include transition(background .3s ease-in-out);
@@ -179,16 +302,16 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 .intro-icon { font-size: 6em; margin-bottom: 50px; }
 
 #cookie-banner {
-  position: fixed; bottom: 0; width: 100%; background-color: $black; color: $white; padding: 20px;
+  position: fixed; bottom: 0; width: 100%; background-color: $black; color: $white; padding: 20px; z-index: 99;
 
   .left { float: left; }
   .right { float: right; }
 
   a.button {
     cursor: pointer; padding: 7px 20px; text-decoration: none;
-    background-color: #f1d600; color: $black; border-radius: 4px;
+    background-color: $yellow; color: $black; border-radius: 4px;
   }
-  a.button:hover { background-color: $white; }
+  a.button:hover { background-color: $yellowLight; }
   a.link { color: $white; }
 }
 
@@ -202,7 +325,7 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
 
 #services {
   background-color: $primary; color: $white;
-  h2, h4 { color: $white; }
+  h2, h4 { color: $white; font-weight: 500; }
   .service-row { margin-bottom: 30px; }
   .service-item {
     margin-bottom: 30px;
@@ -254,8 +377,6 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   }
 }
 @media(min-width:767px) {
-  .content-section { padding-top: 100px; }
-
   #map { height: 400px; }
 }
 
@@ -270,39 +391,6 @@ ul.banner-social-buttons { margin-top: 0; }
 
 @media(max-width:1199px) {
   ul.banner-social-buttons { margin-top: 15px; }
-}
-
-@media(max-width:767px) {
-  .navbar-toggle { margin-top: 15px; }
-  .navbar-header {
-    .navbar-brand {
-      height: 70px;
-      img { height: 70px; }
-    }
-  }
-  .navbar-custom {
-    ul.nav {
-      li {
-        &.active {
-          border-bottom: 0; /*border-left: 3px solid $primary;*/
-          a {
-            &:hover, &:focus, &.active { border-left: 0; }
-          }
-        }
-        a {
-          &:hover,
-          &:focus,
-          &.active { border-bottom: 0; /*border-left: 3px solid $primary;*/ }
-        }
-      }
-      .open > a { background: none; border: 0; }
-    }
-  }
-  ul.banner-social-buttons {
-    li { display: block; margin-bottom: 20px; padding: 0;
-      &:last-child { margin-bottom: 0; }
-    }
-  }
 }
 
 footer {

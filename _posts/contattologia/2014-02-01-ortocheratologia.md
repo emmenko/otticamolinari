@@ -7,7 +7,7 @@ key: ortocheratologia
 
 ### Cos'è
 
-L'Ortocheratologia è una tecninca non chirurgica con cui è possibile ridurre, variare o eliminare un difetto di vista attraverso l'applicazione programmata di lenti a contatto. Questa tecninca consiste nell'applicazione di speciali lenti a contatto rigide gas-permeabili con una conformazione particolare (detta a geometria inversa) per modificare la forma della cornea a scopo ottico.
+L'Ortocheratologia è una tecnica non chirurgica con cui è possibile ridurre, variare o eliminare un difetto di vista attraverso l'applicazione programmata di lenti a contatto. Questa tecninca consiste nell'applicazione di speciali lenti a contatto rigide gas-permeabili con una conformazione particolare (detta a geometria inversa) per modificare la forma della cornea a scopo ottico.
 
 ### A cosa serve
 

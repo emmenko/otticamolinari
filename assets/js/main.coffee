@@ -12,13 +12,7 @@ parallaxOnScroll = (el, offset = 100) ->
   if delta > 0
     el.css('background-position-y', "#{delta * 100 / viewportHeight}%")
 
-# jQuery to collapse the navbar on scroll
 $(window).scroll ->
-  if $(".navbar").offset().top > 50
-    $(".navbar-fixed-top").addClass("top-nav-collapse")
-  else
-    $(".navbar-fixed-top").removeClass("top-nav-collapse")
-
   parallaxOnScroll($('.parallax-bkg'))
 
 # jQuery for page scrolling feature - requires jQuery Easing plugin
