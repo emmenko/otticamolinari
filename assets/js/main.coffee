@@ -25,7 +25,7 @@ $ ->
       evt.preventDefault()
       target = $(@).data('target')
       $('html, body').stop().animate
-        scrollTop: $(target).offset().top
+        scrollTop: $(target).offset().top - 32 # give it some padding
       , 500
 
   $('*[rel=tooltip]').tooltip()
