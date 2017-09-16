@@ -1,6 +1,6 @@
 ---
 layout: servizi
-title: Lenti performanti e ad alta definizione con tecnologia i.Scription®
+title: La lente personalizzata per una corretta visione
 category: optometria
 key: lenti-performanti-alta-definizione-iscription-iprofiler-zeiss
 ---
@@ -35,12 +35,18 @@ Da queste analisi nasce la soluzione ottica ottimizzata e individualizzata con t
 
 Tutti questi parametri sono tenuti in considerazione nel calcolo dei valori della lente. Questo ha un enorme vantaggio: la prestazione dell'occhio può essere analizzata al centesimo di diottria. Questo si traduce in una migliore acuità visiva, superiore anche di 25 volte rispetto a quella possibile con una tecnologia tradizionale. Anche i deficit visivi che fino ad adesso non potevano essere corretti adeguatamente, ora sono parte del calcolo della lente personalizzata. Il risultato è una visione più nitida, con contrasti più netti e colori più brillanti. Com'è possibile tutto questo? Ecco un esempio:
 
-- molte persone che indossano occhiali hanno performance visive soddisfacenti durante il giorno. Appena cala la notte, però, l’acuità visiva diminuisce. Spesso le luci artificiali intense e diffuse irritano molto gli occhi. Guidare la macchina diventa un rischio maggiore in fatto di sicurezza. La causa potrebbe essere determinata proprio dall’uso di lenti che non sono ottimizzate per queste condizioni. Prima d’ora i controlli dell’efficienza visiva non permettevano di andare oltre e determinare tutti i deficit visivi. Questa indagine tradizionale viene chiamata “refrazione soggettiva” (si chiede la lettura di lettere e numeri su di uno schermo). Questa analisi si basa molto sulla collaborazione del cliente e sull’esattezza delle sue percezioni, ma sono facilmente comprensibili i limiti di questa analisi.
+Molte persone che indossano occhiali hanno performance visive soddisfacenti durante il giorno. Appena cala la notte, però, l’acuità visiva diminuisce. Spesso le luci artificiali intense e diffuse irritano molto gli occhi. Guidare la macchina diventa un rischio maggiore in fatto di sicurezza. La causa potrebbe essere determinata proprio dall’uso di lenti che non sono ottimizzate per queste condizioni. Prima d’ora i controlli dell’efficienza visiva non permettevano di andare oltre e determinare tutti i deficit visivi. Questa indagine tradizionale viene chiamata “refrazione soggettiva” (si chiede la lettura di lettere e numeri su di uno schermo). Questa analisi si basa molto sulla collaborazione del cliente e sull’esattezza delle sue percezioni, ma sono facilmente comprensibili i limiti di questa analisi.
 
-<img src="{{ site.base_path }}/assets/img/material/zeiss-iscription-aberrazione.jpg" alt="ZEISS aberrazione" style="max-width: 100%;">
-
-Molte persone che indossano occhiali accusano maggiori difficoltà visive con luce scarsa e di notte.
-Gli esami di refrazione soggettiva devono comunque essere eseguiti, rimane valida la loro utilità per esempio per analizzare la visione spaziale ma non solo. Il nuovo sistema di misurazione oggettivo di Carl Zeiss Vision è da utilizzarsi in aggiunta al metodo di analisi tradizionale. In questo modo i potenziali errori o limiti a cui era soggetto il precedente sistema di determinazione della acuità visiva, ora possono essere evitati: ad esempio occhi stanchi e visione difficoltosa con scarsa luminosità.
+<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 35px;">
+  <div style="display: flex; flex-direction: column; align-items: center; margin-right: 16px;">
+    <img src="{{ site.base_path }}/assets/img/material/zeiss-iscription-aberrazione-giorno.jpg" alt="ZEISS aberrazione" style="width: fit-content;" />
+    <small>Di giorno: <i>buona visione</i></small>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="{{ site.base_path }}/assets/img/material/zeiss-iscription-aberrazione-notte.jpg" alt="ZEISS aberrazione" style="width: fit-content;" />
+    <small>Di notte: <i>visione sfuocata ed effetto alone</i></small>
+  </div>
+</div>
 
 ### L'importanza della visione notturna
 
