@@ -315,12 +315,18 @@ p { margin: 0 0 25px; font-size: 18px; line-height: 1.5; }
   a.link { color: $white; }
 }
 
-.cookie-section {
+.impressum-section,
+.cookie-section,
+.privacy-section, {
   margin-bottom: 35px;
   address { font-size: 16px; line-height: 1.2; }
   h2 { font-size: 20px; letter-spacing: initial; margin-bottom: 20px; }
   h4 { font-size: 16px; margin: 20px 0 10px; }
   p { font-size: 14px; line-height: 1; margin: 0; }
+  ul {
+    margin-top: 16px;
+    li { font-size: 14px; }
+  }
 }
 
 #services {
@@ -398,9 +404,9 @@ footer {
   p { margin: 0; }
 }
 
-::-moz-selection { text-shadow: none; background: #fcfcfc; background: fade($white, 20%); }
+::-moz-selection { text-shadow: none; background: #ccc; background: fade($grey, 20%); }
 
-::selection { text-shadow: none; background: #fcfcfc; background: fade($white, 20%); }
+::selection { text-shadow: none; background: #ccc; background: fade($grey, 20%); }
 
 img::selection { background: transparent; }
 

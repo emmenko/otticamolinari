@@ -185,7 +185,7 @@ if mapElement
             Piazza della Vittoria, 11<br>
             31100 Treviso (TV), Italy<br>
             <abbr title="Telefono">T:</abbr> +39 0422 582347<br>
-            <a href="mailto:#">info@otticamolinari.it</a>
+            <i>info@otticamolinari.it</i>
           </address>
           <a class="link" target="_blank" href="#{place.url}">Vedi in Google Maps</a>
         """)
