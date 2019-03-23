@@ -15,5 +15,4 @@ Sport Vision è basato sul fatto che la percezione visiva caratterizza la maggio
 Ogni attività fisica e visuo-motoria che un essere umano svolge è caratterizzata da esigenze visive più o meno specifiche e l'abilità di interfacciarsi con tali esigenze dipende enormemente da come siamo abituati ed allenati ad utilizzare il sistema visivo.
 
 #### Referenze
-- [EASV](http://www.easv.org)
-- [Sports Vision Magazine](http://www.sportsvisionmagazine.com)
+- [EASV](https://www.easv.org)
