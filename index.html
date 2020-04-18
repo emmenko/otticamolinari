@@ -7,21 +7,93 @@ layout: master
   <ol class="carousel-indicators">
     <li data-target="#intro-banners" data-slide-to="0" class="active"></li>
     <li data-target="#intro-banners" data-slide-to="1"></li>
+    <li data-target="#intro-banners" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <div class="item-overlay">
+        <img src="{{ site.base_path }}/assets/img/eyes-mask.jpg" />
+      </div>
+      <div class="carousel-caption">
+        <h1>Annuncio riguardo COVID-19</h1>
+        <p>
+          L'Ottica Molinari rimane disponibile ad
+          <a
+            class="page-scroll"
+            data-target="#timetable"
+            href="{{ site.base_path }}/#timetable"
+            title="Orari"
+            >orari limitati</a
+          >
+          per garantire i necessari servizi.
+        </p>
+        <p>
+          Si prega di
+          <a
+            class="page-scroll"
+            data-target="#covid19"
+            href="{{ site.base_path }}/#covid19"
+            title="Informazioni riguardanti COVID-19"
+            >leggere le nuove informazioni</a
+          >
+          sugli orari di apertura e le normative di igiene.
+        </p>
+        <a
+          style="visibility: hidden;"
+          href="https://unsplash.com/@anikolleshi?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Ani Kolleshi"
+          ><span style="display: inline-block; padding: 2px 3px;"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="
+                height: 12px;
+                width: auto;
+                position: relative;
+                vertical-align: middle;
+                top: -2px;
+                fill: white;
+              "
+              viewBox="0 0 32 32"
+            >
+              <title>unsplash-logo</title>
+              <path
+                d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+              ></path></svg></span
+          ><span style="display: inline-block; padding: 2px 3px;"
+            >Ani Kolleshi</span
+          ></a
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-overlay">
         <img src="{{ site.base_path }}/assets/img/iprofiler_big.jpg" />
       </div>
       <div class="carousel-caption">
         <h1>La lente personalizzata per una corretta visione</h1>
         <p>
-          Lasciati consigliare le migliori lenti per una visione più nitida, anche di sera, grazie al nuovo strumento <i>ZEISS i.Profiler<sup>®plus</sup></i>
+          Lasciati consigliare le migliori lenti per una visione più nitida,
+          anche di sera, grazie al nuovo strumento
+          <i>ZEISS i.Profiler<sup>®plus</sup></i>
         </p>
         <p>
-          <a href="{{ site.base_path }}/servizi/optometria/lenti-iscription-iprofiler.html" title="Lenti i.Scription di ZEISS">Leggi come funziona</a> e <a class="page-scroll" data-target="#contact" href="{{ site.base_path }}/#contact" title="Contatto">prenota un appuntamento</a>
+          <a
+            href="{{ site.base_path }}/servizi/optometria/lenti-iscription-iprofiler.html"
+            title="Lenti i.Scription di ZEISS"
+            >Leggi come funziona</a
+          >
+          e
+          <a
+            class="page-scroll"
+            data-target="#contact"
+            href="{{ site.base_path }}/#contact"
+            title="Contatto"
+            >prenota un appuntamento</a
+          >
         </p>
       </div>
     </div>
@@ -31,7 +103,10 @@ layout: master
       </div>
       <div class="carousel-caption">
         <h1 class="brand-heading">Stile &amp; Benessere Visivo</h1>
-        <p class="intro-text">Optometria comportamentale, Visione e Postura, Training Visivo, Sport Vision, Contattologia, Ipovisione.</p>
+        <p class="intro-text">
+          Optometria comportamentale, Visione e Postura, Training Visivo, Sport
+          Vision, Contattologia, Ipovisione.
+        </p>
         <span data-video-id="101507282" class="video-link video-play">
           <i class="fa fa-play-circle-o animated"></i>
         </span>
@@ -40,15 +115,57 @@ layout: master
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#intro-banners" role="button" data-slide="prev">
+  <a
+    class="left carousel-control"
+    href="#intro-banners"
+    role="button"
+    data-slide="prev"
+  >
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#intro-banners" role="button" data-slide="next">
+  <a
+    class="right carousel-control"
+    href="#intro-banners"
+    role="button"
+    data-slide="next"
+  >
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<!-- COVID-19 Section -->
+<section id="covid19" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>
+        COVID-19
+        <p class="subtitle">
+          Per rendere sicuro l’accesso in negozio e limitare l’attesa, Vi
+          consigliamo di prendere appuntamento per qualsiasi necessità ai
+          numeri:
+        </p>
+        <p>
+          <abbr title="Telefono">Tel:</abbr>
+          <a class="link" href="tel:0422582347">0422 582347</a>
+          <br />
+          <abbr title="Cellulare">Cell:</abbr>
+          <a class="link" href="tel:3385910882">338 5910882</a>
+        </p>
+        <p class="subtitle">
+          Vi ricordiamo che l'ingresso in negozio è possibile con mascherina,
+          guanti e solo una persona adulta alla volta in assenza di febbre,
+          tosse o positività al COVID-19.
+          <br />
+          I minori di anni 14 possono essere accompagnati.
+          <br />
+          Vi ringraziamo per la collaborazione.
+        </p>
+      </h2>
+    </div>
+  </div>
+</section>
 
 <!-- Services Section -->
 <section id="services">
@@ -60,16 +177,23 @@ layout: master
     </div>
     <div class="row service-row">
       <div class="service-item col-md-4 col-lg-offset-2">
-        <a class="link" href="{{ site.base_path }}/servizi/optometria-comportamentale.html">
+        <a
+          class="link"
+          href="{{ site.base_path }}/servizi/optometria-comportamentale.html"
+        >
           <span class="service-icon fa fa-book"></span>
           <h4>Optometria comportamentale</h4>
         </a>
         <p class="text-muted small-description">
-          Valutazione dell'interconnessione dell'apparato visivo con tutti gli altri sistemi di elaborazione delle informazioni.
+          Valutazione dell'interconnessione dell'apparato visivo con tutti gli
+          altri sistemi di elaborazione delle informazioni.
         </p>
       </div>
       <div class="service-item col-md-4">
-        <a class="link" href="{{ site.base_path }}/servizi/postura-e-vision.html">
+        <a
+          class="link"
+          href="{{ site.base_path }}/servizi/postura-e-vision.html"
+        >
           <span class="service-icon fa fa-child"></span>
           <h4>Visione e Postura</h4>
         </a>
@@ -80,12 +204,16 @@ layout: master
     </div>
     <div class="row service-row">
       <div class="service-item col-md-4 col-lg-offset-2">
-        <a class="link" href="{{ site.base_path }}/servizi/training-visivo.html">
+        <a
+          class="link"
+          href="{{ site.base_path }}/servizi/training-visivo.html"
+        >
           <span class="service-icon fa fa-bicycle"></span>
           <h4>Training Visivo</h4>
         </a>
         <p class="text-muted small-description">
-          Programma terapeutico per migliorare ed equilibrare la coordinazione tra la visione e gli altri processi percettivi.
+          Programma terapeutico per migliorare ed equilibrare la coordinazione
+          tra la visione e gli altri processi percettivi.
         </p>
       </div>
       <div class="service-item col-md-4">
@@ -94,7 +222,8 @@ layout: master
           <h4>Sport Vision</h4>
         </a>
         <p class="text-muted small-description">
-          Scopri come allenare la tua efficienza visiva, requisito fondamentale per la pratica sportiva.
+          Scopri come allenare la tua efficienza visiva, requisito fondamentale
+          per la pratica sportiva.
         </p>
       </div>
     </div>
@@ -152,31 +281,35 @@ layout: master
         <li>
           <blockquote>
             <p class="testimonial-text">
-            "Non potrei essere più felice della decisione che ho preso: ho tutti i vantaggi delle lenti a contatto, senza lo svantaggio del fastidio che possono causare durante il giorno!"
+              "Non potrei essere più felice della decisione che ho preso: ho
+              tutti i vantaggi delle lenti a contatto, senza lo svantaggio del
+              fastidio che possono causare durante il giorno!"
             </p>
             <footer><cite>E.P.</cite> anni 17</footer>
           </blockquote>
           <blockquote class="blockquote-reverse">
             <p class="testimonial-text">
-            "Nel giro di una settimana ci vedevo perfettamente."
+              "Nel giro di una settimana ci vedevo perfettamente."
             </p>
             <footer><cite>E.B.</cite> anni 16</footer>
           </blockquote>
           <blockquote>
             <p class="testimonial-text">
-            "La vera comodità è stata riuscire a vedere come e di più che con le lenti a contatto."
+              "La vera comodità è stata riuscire a vedere come e di più che con
+              le lenti a contatto."
             </p>
             <footer><cite>M.B.</cite> anni 20</footer>
           </blockquote>
           <blockquote class="blockquote-reverse">
             <p class="testimonial-text">
-            "Le lenti a contatto per ortocheratologia non danno alcun fastidio mentre si dorme."
+              "Le lenti a contatto per ortocheratologia non danno alcun fastidio
+              mentre si dorme."
             </p>
             <footer><cite>D.G.</cite> anni 15</footer>
           </blockquote>
           <blockquote>
             <p class="testimonial-text">
-            "Giudico l’esperienza in modo positivo."
+              "Giudico l’esperienza in modo positivo."
             </p>
             <footer><cite>G.T.</cite> anni 19</footer>
           </blockquote>
@@ -192,9 +325,19 @@ layout: master
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Chi siamo</h2>
       <div class="about-glasses">
-        <img class="img-circle" src="{{ site.base_path }}/assets/img/treviso-old_small.jpg" alt="Paolo Molinari">
-        <div class="bridge"><img src="{{ site.base_path }}/assets/img/bridge_glasses.png"></div>
-        <img class="img-circle" src="{{ site.base_path }}/assets/img/gravatar_small.png" alt="Paolo Molinari">
+        <img
+          class="img-circle"
+          src="{{ site.base_path }}/assets/img/treviso-old_small.jpg"
+          alt="Paolo Molinari"
+        />
+        <div class="bridge">
+          <img src="{{ site.base_path }}/assets/img/bridge_glasses.png" />
+        </div>
+        <img
+          class="img-circle"
+          src="{{ site.base_path }}/assets/img/gravatar_small.png"
+          alt="Paolo Molinari"
+        />
       </div>
       <p>
         <a class="link" href="{{ site.base_path }}/negozio">
@@ -210,9 +353,59 @@ layout: master
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Quando ci puoi trovare</h2>
-      <p>mattino 9.00- 12.30 / pomeriggio 16.00 -19.30</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="timetable-covid19">
+        <h4>Nuovi orari durante il COVID-19</h4>
+        <p>Al momento siamo aperti con i seguenti orari:</p>
+        <div>
+          <dl>
+            <dt>Martedì</dt>
+            <dd>10:00 - 12:30</dd>
+          </dl>
+          <dl>
+            <dt>Mercoledì</dt>
+            <dd>10:00 - 12:30</dd>
+          </dl>
+          <dl>
+            <dt>Giovedì</dt>
+            <dd>16:00 - 19:00</dd>
+          </dl>
+          <dl>
+            <dt>Venerdì</dt>
+            <dd>10:00 - 12:30</dd>
+          </dl>
+          <dl>
+            <dt>Sabato</dt>
+            <dd>10:00 - 12:30</dd>
+          </dl>
+        </div>
+        <p class="covid19-info">
+          Vi ricordiamo che l'ingresso in negozio è possibile con mascherina,
+          guanti e solo una persona adulta alla volta in assenza di febbre,
+          tosse o positività al COVID-19.
+          <br />
+          I minori di anni 14 possono essere accompagnati.
+          <br />
+          Vi ringraziamo per la collaborazione.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <p class="strikethrough">
+        mattino 9.00 - 12.30 / pomeriggio 16.00 - 19.30
+      </p>
       <p>Lunedì chiuso</p>
-      <small><em>Si eseguono valutazioni Visuo-Posturali, Analisi Visiva (O.E.P., MKH secondo Haase) e Visual Training su appuntamento.</em></small>
+      <small>
+        <em>
+          Si eseguono valutazioni Visuo-Posturali, Analisi Visiva (O.E.P., MKH
+          secondo Haase) e Visual Training su appuntamento.
+        </em>
+      </small>
     </div>
   </div>
 </section>
@@ -222,7 +415,10 @@ layout: master
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Mettiti in contatto con noi</h2>
-      <p>Hai qualche domanda o dubbio? Hai bisogno di un appuntamento? Non esitare a contattarci.</p>
+      <p>
+        Hai qualche domanda o dubbio? Hai bisogno di un appuntamento? Non
+        esitare a contattarci.
+      </p>
       <p>
         <i>info@otticamolinari.it</i>
       </p>
@@ -247,13 +443,18 @@ layout: master
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Vieni a trovarci</h2>
       <p>
-        <small>Il negozio è situato in centro storico a Treviso, facilmente raggiungibile a piedi (5min dalla stazione) o in auto (la piazza offre possibilità di parcheggio).</small>
+        <small
+          >Il negozio è situato in centro storico a Treviso, facilmente
+          raggiungibile a piedi (5min dalla stazione) o in auto (la piazza offre
+          possibilità di parcheggio).</small
+        >
       </p>
       <address>
-        <strong>Ottica Molinari</strong><br>
-        P.zza della Vittoria 11<br>
-        31100 Treviso<br>
-        <abbr title="Telefono">Tel:</abbr> <a class="link" href="tel:0422582347">0422 582347</a>
+        <strong>Ottica Molinari</strong><br />
+        P.zza della Vittoria 11<br />
+        31100 Treviso<br />
+        <abbr title="Telefono">Tel:</abbr>
+        <a class="link" href="tel:0422582347">0422 582347</a>
       </address>
     </div>
   </div>
