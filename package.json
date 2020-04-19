@@ -1,0 +1,44 @@
+{
+  "name": "otticamolinari",
+  "version": "2.0.0",
+  "description": "Official website for Ottica Molinari",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmenko/otticamolinari.git"
+  },
+  "author": "Nicola Molinari <me@emmenko.org> (https://emmenko.org/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmenko/otticamolinari/issues"
+  },
+  "homepage": "https://otticamolinari.it",
+  "dependencies": {
+    "@emotion/core": "10.0.28",
+    "@lekoarts/gatsby-theme-minimal-blog-core": "2.2.6",
+    "@mdx-js/react": "1.5.8",
+    "@svgr/webpack": "5.3.1",
+    "@theme-ui/color": "0.3.1",
+    "@theme-ui/components": "0.3.1",
+    "@theme-ui/presets": "0.3.0",
+    "gatsby": "2.20.25",
+    "gatsby-plugin-catch-links": "2.2.3",
+    "gatsby-plugin-react-helmet": "3.2.4",
+    "gatsby-plugin-theme-ui": "0.3.0",
+    "gatsby-plugin-typescript": "2.3.3",
+    "lodash.kebabcase": "4.1.1",
+    "mdx-utils": "0.2.0",
+    "prism-react-renderer": "1.0.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.0.0",
+    "react-live": "2.2.2",
+    "theme-ui": "0.3.1",
+    "typeface-ibm-plex-sans": "0.0.75"
+  }
+}
