@@ -53,7 +53,7 @@ export default {
       heading: tailwind.colors.black,
       text: tailwind.colors.black,
     },
-    svg: "#003c72",
+    svg: { primary: "#003c72", secondary: "#FC7F96" },
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
@@ -65,11 +65,11 @@ export default {
         divide: tailwind.colors.gray[8],
         muted: tailwind.colors.gray[8],
         covid19: {
-          background: "#fbb0b0",
+          background: "#FC7F96",
           heading: `#1A202C`,
-          text: tailwind.colors.dark,
+          text: tailwind.colors.gray[8],
         },
-        svg: "#fff4a1",
+        svg: { primary: "#ffef72", secondary: "#7193b3" },
       },
     },
   },
