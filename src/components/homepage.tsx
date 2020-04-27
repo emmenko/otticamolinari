@@ -251,6 +251,13 @@ const Homepage = ({ posts }: PostsProps) => {
         }}
       >
         <Title text="Vieni a trovarci" />
+        <Styled.div
+          sx={{
+            mb: [3, 4],
+          }}
+        >
+          <Embed src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6284.936046488591!2d12.23961778659644!3d45.6644168713948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe76e4ef43b6bd7e7!2sOttica%20Molinari!5e0!3m2!1sen!2sde!4v1587999826384!5m2!1sen!2sde" />
+        </Styled.div>
         <Flex
           sx={{
             mb: [3, 4],
