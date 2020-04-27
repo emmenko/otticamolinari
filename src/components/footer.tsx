@@ -20,15 +20,22 @@ const Footer = () => (
       variant: `dividers.top`,
     }}
   >
-    <div>
+    <Flex
+      sx={{
+        flexDirection: "column",
+        mb: [3, 3, 0],
+      }}
+    >
       Copyright &copy; Ottica Molinari {new Date().getFullYear()}
       <div>P.IVA 00804150266</div>
-    </div>
+    </Flex>
     <Flex
       sx={{
         "> * + *": {
-          marginLeft: "8px",
+          marginLeft: [0, "8px"],
+          marginTop: ["8px", 0],
         },
+        display: ["block", "flex"],
       }}
     >
       <Box>
