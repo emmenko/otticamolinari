@@ -1,7 +1,7 @@
 import React from "react";
 import { Global } from "@emotion/core";
 import { Styled, css } from "theme-ui";
-import { Box, Flex } from "@theme-ui/components";
+import { Box } from "@theme-ui/components";
 import "typeface-ibm-plex-sans";
 import SEO from "./seo";
 import Header from "./header";
@@ -32,6 +32,10 @@ const Layout = ({ children, className }: LayoutProps) => (
         a: {
           transition: `all 0.3s ease-in-out`,
           color: `text`,
+        },
+        figcaption: {
+          textAlign: "center",
+          fontSize: '0.875rem',
         },
       })}
     />

@@ -11,40 +11,61 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "@lekoarts/gatsby-theme-minimal-blog-core",
+      resolve: "gatsby-source-filesystem",
       options: {
-        showLineNumbers: false,
-        // Links displayed in the header on the right side
-        externalLinks: [
+        name: "fragments",
+        path: `${__dirname}/src/fragments`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/files/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
           {
-            name: "Facebook",
-            url: "https://www.facebook.com/otticamolinari",
-          },
-          {
-            name: "Twitter",
-            url: "https://twitter.com/ottica_molinari",
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+              showCaptions: true,
+            },
           },
         ],
-        // Navigation links
-        navigation: [
+        plugins: [
           {
-            title: "About",
-            slug: "/about",
-          },
-          {
-            title: "Negozio",
-            slug: "/negozio",
-          },
-          {
-            title: "Servizi",
-            slug: "/servizi",
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+              showCaptions: true,
+            },
           },
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-theme-ui`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-netlify-cache",
   ],
 };

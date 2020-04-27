@@ -10,7 +10,7 @@ import replaceSlashes from "../utils/replaceSlashes";
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata();
-  const { navigation: nav, externalLinks, basePath } = useMinimalBlogConfig();
+  const { navigation: nav, externalLinks } = useMinimalBlogConfig();
   const [colorMode, setColorMode] = useColorMode();
   const isDark = colorMode === `dark`;
   const toggleColorMode = (e: any) => {
@@ -19,23 +19,21 @@ const Header = () => {
   };
 
   return (
-    <header sx={{ mb: [4, 5] }}>
+    <Styled.div as="header" sx={{ mb: [2, 3] }}>
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
-        <Link
-          to={replaceSlashes(`/${basePath}`)}
+        <Styled.a
+          as={Link}
+          to="/"
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
         >
-          <h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
-            <img
-              src="/logo_400x100.png"
-              sx={{ maxHeight: "48px", width: "100%" }}
-            />
-          </h1>
-        </Link>
+          <Styled.h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
+            <Styled.img src="/logo_400x100.png" sx={{ maxHeight: "48px" }} />
+          </Styled.h1>
+        </Styled.a>
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </Flex>
-      <div
+      <Styled.div
         sx={{
           boxSizing: `border-box`,
           display: `flex`,
@@ -50,7 +48,7 @@ const Header = () => {
       >
         <Navigation nav={nav} />
         {externalLinks && externalLinks.length > 0 && (
-          <div
+          <Styled.div
             sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}
           >
             {externalLinks.map((link) => (
@@ -58,10 +56,10 @@ const Header = () => {
                 {link.name}
               </Styled.a>
             ))}
-          </div>
+          </Styled.div>
         )}
-      </div>
-    </header>
+      </Styled.div>
+    </Styled.div>
   );
 };
 

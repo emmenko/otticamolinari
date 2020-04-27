@@ -41,6 +41,7 @@ export default {
   ...tailwind,
   initialColorMode: `light`,
   useCustomProperties: true,
+  useColorSchemeMediaQuery: true,
   colors: {
     ...tailwind.colors,
     primary: tailwind.colors.purple[7],
@@ -48,11 +49,13 @@ export default {
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
+    muted: tailwind.colors.gray[4],
     covid19: {
       background: "#fff4a1",
       heading: tailwind.colors.black,
       text: tailwind.colors.black,
     },
+    message: tailwind.colors.text,
     svg: { primary: "#003c72", secondary: "#FC7F96" },
     modes: {
       dark: {
@@ -69,6 +72,7 @@ export default {
           heading: `#1A202C`,
           text: tailwind.colors.gray[8],
         },
+        message: tailwind.colors.text,
         svg: { primary: "#ffef72", secondary: "#7193b3" },
       },
     },
@@ -185,6 +189,11 @@ export default {
     listItem: {
       fontSize: [1, 2, 3],
       color: `text`,
+      textDecoration: `none`,
+      ":hover": {
+        color: `heading`,
+        textDecoration: `underline`,
+      },
     },
   },
 };
