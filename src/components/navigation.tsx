@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Box } from "@theme-ui/components";
+import { Box, Flex } from "@theme-ui/components";
 import Link from "./link";
 
 type NavigationProps = {
@@ -11,7 +11,7 @@ type NavigationProps = {
 };
 
 const Navigation = (props: NavigationProps) => (
-  <Box
+  <Flex
     as="nav"
     sx={{
       "> * + *": { ml: 3 },
@@ -20,11 +20,13 @@ const Navigation = (props: NavigationProps) => (
     }}
   >
     {props.nav.map((item) => (
-      <Link key={item.slug} activeClassName="active" to={item.slug}>
-        {item.title}
-      </Link>
+      <div key={item.slug}>
+        <Link activeClassName="active" to={item.slug}>
+          {item.title}
+        </Link>
+      </div>
     ))}
-  </Box>
+  </Flex>
 );
 
 export default Navigation;
