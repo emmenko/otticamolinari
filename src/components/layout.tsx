@@ -37,6 +37,9 @@ const Layout = ({ children, className }: LayoutProps) => (
           textAlign: "center",
           fontSize: '0.875rem',
         },
+        address: {
+          fontSize: [1, 2],
+        },
       })}
     />
     <SEO />

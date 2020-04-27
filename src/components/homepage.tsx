@@ -15,13 +15,10 @@ import { Link as GatsbyLink, useStaticQuery, graphql } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import Layout from "./layout";
 import Title from "./title";
-import Listing from "./listing";
 import Orari from "./orari";
 import Contacts from "./contacts";
 // @ts-ignore
 import FragmentServizi from "../fragments/servizi.mdx";
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config";
-import replaceSlashes from "../utils/replaceSlashes";
 // @ts-ignore
 import MedicalCareSvg from "../files/svg/undraw_medical_care_movn.svg";
 // @ts-ignore
@@ -246,80 +243,6 @@ const Homepage = ({ posts }: PostsProps) => {
             </Link>
           </Styled.p>
         </Flex>
-        {/* <Styled.p>
-          Si eseguono valutazioni Visuo-Posturali, Analisi Visiva (O.E.P., MKH
-          secondo Haase) e Visual Training su appuntamento.
-        </Styled.p>
-        <Styled.p>
-          Per qualsiasi informazione non esitare a contattarci:
-        </Styled.p>
-        <Flex
-          sx={{
-            mb: [3, 4],
-            // alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <Text as="p">
-            <abbr title="Mail">Mail: </abbr>
-            <Styled.a href="mailto:info@otticamolinari.it">
-              info@otticamolinari.it
-            </Styled.a>
-            <br />
-            <abbr title="Telefono">Tel: </abbr>
-            <Styled.a href="tel:0422582347">0422 582347</Styled.a>
-            <br />
-            <abbr title="Cellulare">Cell: </abbr>
-            <Styled.a href="tel:3385910882">338 5910882</Styled.a>
-          </Text>
-        </Flex>
-        <Divider />
-        <Styled.div
-          as="dl"
-          sx={{
-            a: { variant: "links.listItem" },
-            dd: { fontSize: 1 },
-            "> dd + dt": {
-              mt: [3, 4],
-            },
-          }}
-        >
-          <dt>
-            <GatsbyLink to="/servizi/optometria-comportamentale">
-              Optometria comportamentale
-            </GatsbyLink>
-          </dt>
-          <dd>
-            Valutazione dell'interconnessione dell'apparato visivo con tutti gli
-            altri sistemi di elaborazione delle informazioni.
-          </dd>
-          <dt>
-            <GatsbyLink to="/servizi/visione-e-postura">Visione e postura</GatsbyLink>
-          </dt>
-          <dd>Riprogrammazione posturale globale.</dd>
-          <dt>
-            <GatsbyLink to="/servizi/training-visivo">Training visivo</GatsbyLink>
-          </dt>
-          <dd>
-            Programma terapeutico per migliorare ed equilibrare la coordinazione
-            tra la visione e gli altri processi percettivi.
-          </dd>
-          <dt>
-            <GatsbyLink to="/servizi/sport-vision">Sport vision</GatsbyLink>
-          </dt>
-          <dd>
-            Scopri come allenare la tua efficienza visiva, requisito
-            fondamentale per la pratica sportiva.
-          </dd>
-          <dt>
-            <GatsbyLink to="/servizi/contattologia">Contattologia</GatsbyLink>
-          </dt>
-          <dd>Lenti a contatto per il benessere visivo.</dd>
-          <dt>
-            <GatsbyLink to="/servizi/ipovisione">Ipovisione</GatsbyLink>
-          </dt>
-          <dd>Iscritto all'Elenco Regionale Ditte Fornitrici di protesi.</dd>
-        </Styled.div> */}
       </Styled.div>
       <Styled.div
         as="section"

@@ -5,12 +5,14 @@ import { Text, Message } from "@theme-ui/components";
 import Code from "../components/code";
 import Title from "../components/title";
 import Orari from "../components/orari";
+import Address from "../components/address";
 import Contacts from "../components/contacts";
 
 export default {
   Text,
   Title,
   Orari,
+  Address,
   Contacts,
   Message: props => <Message {...props} variant="messages" />,
   pre: (preProps) => {
