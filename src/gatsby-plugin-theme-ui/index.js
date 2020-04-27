@@ -50,7 +50,7 @@ export default {
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
     muted: tailwind.colors.gray[4],
-    highlight: '#efeffe',
+    highlight: "#efeffe",
     covid19: {
       background: "#fff4a1",
       heading: tailwind.colors.black,
@@ -150,6 +150,10 @@ export default {
     td: {
       verticalAlign: `top`,
       borderBottomWidth: `1px`,
+    },
+    CookieBanner: {
+      backgroundColor: "highlight",
+      color: "message",
     },
   },
   text: {

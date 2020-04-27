@@ -13,6 +13,7 @@ const Footer = () => {
         display: `flex`,
         justifyContent: `space-between`,
         mt: [6],
+        mb: [4],
         color: `secondary`,
         a: {
           variant: `links.secondary`,

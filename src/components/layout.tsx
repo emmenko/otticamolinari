@@ -1,13 +1,15 @@
+/** @jsx jsx */
+import "typeface-ibm-plex-sans";
 import React from "react";
 import { Global } from "@emotion/core";
-import { Styled, css } from "theme-ui";
+import { jsx, Styled, css } from "theme-ui";
 import { Box } from "@theme-ui/components";
-import "typeface-ibm-plex-sans";
 import SEO from "./seo";
 import Header from "./header";
 import Footer from "./footer";
 import CodeStyles from "../styles/code";
 import SkipNavLink from "./skip-nav";
+import CookieConsent from "./cookie-consent";
 
 type LayoutProps = { children: React.ReactNode; className?: string };
 
@@ -35,7 +37,7 @@ const Layout = ({ children, className }: LayoutProps) => (
         },
         figcaption: {
           textAlign: "center",
-          fontSize: '0.875rem',
+          fontSize: "0.875rem",
         },
         address: {
           fontSize: [1, 2],
@@ -65,6 +67,7 @@ const Layout = ({ children, className }: LayoutProps) => (
       </Box>
       <Footer />
     </Box>
+    <CookieConsent />
   </Styled.root>
 );
 
