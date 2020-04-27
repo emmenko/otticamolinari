@@ -3,13 +3,7 @@ import { jsx, Styled } from "theme-ui";
 import { Flex, Text } from "@theme-ui/components";
 
 const Contacts = () => (
-  <Flex
-    sx={{
-      // marginY: [3, 4],
-      // alignItems: "center",
-      flexDirection: "column",
-    }}
-  >
+  <Flex sx={{ flexDirection: "column" }}>
     <Text as="p">
       <abbr title="Mail">Mail: </abbr>
       <Styled.a href="mailto:info@otticamolinari.it">

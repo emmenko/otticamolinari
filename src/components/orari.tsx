@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, SxStyleProp } from "theme-ui";
 import { Grid, Text } from "@theme-ui/components";
 
 type Props = {
-  sx?: React.CSSProperties;
+  sx?: SxStyleProp;
   className?: string;
 };
 

@@ -63,7 +63,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-typescript",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-theme-ui",
     "gatsby-plugin-netlify-cache",

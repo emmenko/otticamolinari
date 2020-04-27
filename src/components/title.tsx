@@ -1,17 +1,18 @@
 /** @jsx jsx */
-import React from "react"
-import { jsx } from "theme-ui"
-import { Box } from "@theme-ui/components"
+import React from "react";
+import { jsx } from "theme-ui";
+import { Box, Flex } from "@theme-ui/components";
 
 type TitleProps = {
-  children?: React.ReactNode
-  as?: string
-  className?: string
-  text: string
-}
+  children?: React.ReactNode;
+  as?: string;
+  className?: string;
+  text: string;
+};
 
-const Title = ({ text, children, as = `h2`, className }: TitleProps) => (
-  <div
+// const Title = ({ text, children, as = `h2`, className }: TitleProps) => (
+const Title = (props: TitleProps) => (
+  <Flex
     sx={{
       justifyContent: `space-between`,
       alignItems: `center`,
@@ -22,17 +23,22 @@ const Title = ({ text, children, as = `h2`, className }: TitleProps) => (
       mb: 4,
       flexFlow: `wrap`,
       boxSizing: `border-box`,
-      display: `flex`,
     }}
   >
     <Box
-      as={as}
-      sx={{ fontWeight: `medium`, fontSize: [3, 4], fontFamily: `heading`, lineHeight: `heading`, color: `heading` }}
-      className={className}
+      as="h2"
+      sx={{
+        fontWeight: `medium`,
+        fontSize: [3, 4],
+        fontFamily: `heading`,
+        lineHeight: `heading`,
+        color: `heading`,
+      }}
+      className={props.className}
     >
-      {text}
+      {props.text}
     </Box>
-    <div
+    <Box
       sx={{
         color: `secondary`,
         a: {
@@ -40,9 +46,9 @@ const Title = ({ text, children, as = `h2`, className }: TitleProps) => (
         },
       }}
     >
-      {children}
-    </div>
-  </div>
-)
+      {props.children}
+    </Box>
+  </Flex>
+);
 
-export default Title
+export default Title;

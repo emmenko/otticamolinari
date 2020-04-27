@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import React from "react";
-import { jsx, Styled } from "theme-ui";
-import { Link, Text, Flex, Button } from "@theme-ui/components";
-import { Link as GatsbyLink } from "gatsby";
+import { jsx } from "theme-ui";
+import { Text, Flex, Button, Box } from "@theme-ui/components";
+import Link from "./link";
 
 const dismissedCookieKey = "cookieconsent_dismissed";
 const cookieContainerId = "cookie-banner";
 
 const CookieConsent = () => {
-  const elementRef = React.useRef<HTMLElement>();
+  const elementRef = React.useRef<HTMLDivElement>();
   const [isVisible, setIsVisible] = React.useState(false);
   React.useEffect(() => {
     setIsVisible(!~document.cookie.indexOf(dismissedCookieKey));
@@ -23,7 +23,7 @@ const CookieConsent = () => {
     return null;
   }
   return (
-    <Styled.div
+    <Box
       ref={elementRef}
       id={cookieContainerId}
       sx={{
@@ -47,13 +47,11 @@ const CookieConsent = () => {
         <Text as="p">
           Questo sito utilizza cookie tecnici ai fini di migliorare l'esperienza
           di navigazione sul sito.{" "}
-          <Link as={GatsbyLink} to="/cookie-policy">
-            Approfondisci
-          </Link>
+          <Link to="/cookie-policy">Approfondisci</Link>
         </Text>
         <Button onClick={acceptCookie}>OK</Button>
       </Flex>
-    </Styled.div>
+    </Box>
   );
 };
 

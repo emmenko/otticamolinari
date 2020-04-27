@@ -1,12 +1,11 @@
 /** @jsx jsx */
 import { jsx, useColorMode, Styled } from "theme-ui";
-import { Link } from "gatsby";
-import { Flex } from "@theme-ui/components";
+import { Flex, Box } from "@theme-ui/components";
 import useSiteMetadata from "../hooks/use-site-metadata";
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config";
+import Link from "./link";
 import ColorModeToggle from "./colormode-toggle";
 import Navigation from "./navigation";
-import replaceSlashes from "../utils/replaceSlashes";
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata();
@@ -19,10 +18,9 @@ const Header = () => {
   };
 
   return (
-    <Styled.div as="header" sx={{ mb: [2, 3] }}>
+    <Box as="header" sx={{ mb: [2, 3] }}>
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
-        <Styled.a
-          as={Link}
+        <Link
           to="/"
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
@@ -30,13 +28,12 @@ const Header = () => {
           <Styled.h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
             <Styled.img src="/logo_400x100.png" sx={{ maxHeight: "48px" }} />
           </Styled.h1>
-        </Styled.a>
+        </Link>
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </Flex>
-      <Styled.div
+      <Flex
         sx={{
           boxSizing: `border-box`,
-          display: `flex`,
           variant: `dividers.bottom`,
           alignItems: `center`,
           justifyContent: `space-between`,
@@ -47,19 +44,15 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
-        {externalLinks && externalLinks.length > 0 && (
-          <Styled.div
-            sx={{ "a:not(:first-of-type)": { ml: 3 }, fontSize: [1, `18px`] }}
-          >
-            {externalLinks.map((link) => (
-              <Styled.a key={link.url} href={link.url}>
-                {link.name}
-              </Styled.a>
-            ))}
-          </Styled.div>
-        )}
-      </Styled.div>
-    </Styled.div>
+        <Box sx={{ "> * + *": { ml: 3 }, fontSize: [1, `18px`] }}>
+          {externalLinks.map((link) => (
+            <Styled.a key={link.url} href={link.url} rel="noopener noreferrer">
+              {link.name}
+            </Styled.a>
+          ))}
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 

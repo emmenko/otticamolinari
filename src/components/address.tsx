@@ -12,7 +12,9 @@ const Address = () => (
     <abbr title="Telefono">T:</abbr>{" "}
     <Styled.a href="tel:0422582347">0422 582347</Styled.a>
     <br />
-    <Styled.a href="mailto:info@otticamolinari.it">info@otticamolinari.it</Styled.a>
+    <Styled.a href="mailto:info@otticamolinari.it">
+      info@otticamolinari.it
+    </Styled.a>
   </address>
 );
 

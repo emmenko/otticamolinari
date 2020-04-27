@@ -8,13 +8,12 @@ type Props = {
 
 // Adapted from: https://codepen.io/aaroniker/pen/KGpXZo and https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/Navigation/Navigation.Header.tsx
 
-const ColorModeToggle = ({ isDark, toggle }: Props) => (
+const ColorModeToggle = (props: Props) => (
   <Styled.div
     as="button"
-    onClick={toggle}
-    type="button"
-    aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-    title={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+    onClick={props.toggle}
+    aria-label={props.isDark ? `Activate Light Mode` : `Activate Dark Mode`}
+    title={props.isDark ? `Activate Light Mode` : `Activate Dark Mode`}
     sx={{
       opacity: 0.65,
       position: `relative`,
@@ -40,13 +39,16 @@ const ColorModeToggle = ({ isDark, toggle }: Props) => (
         width: `24px`,
         height: `24px`,
         borderRadius: `50%`,
-        border: (t) => (isDark ? `4px solid ${t.colors.toggleIcon}` : `none`),
-        backgroundColor: isDark ? `toggleIcon` : `transparent`,
-        transform: isDark ? `scale(0.55)` : `scale(1)`,
+        border: (t) =>
+          props.isDark ? `4px solid ${t.colors.toggleIcon}` : `none`,
+        backgroundColor: props.isDark ? `toggleIcon` : `transparent`,
+        transform: props.isDark ? `scale(0.55)` : `scale(1)`,
         transition: `all 0.45s ease`,
-        overflow: isDark ? `visible` : `hidden`,
+        overflow: props.isDark ? `visible` : `hidden`,
         boxShadow: (t) =>
-          isDark ? `none` : `inset 8px -8px 0px 0px ${t.colors.toggleIcon}`,
+          props.isDark
+            ? `none`
+            : `inset 8px -8px 0px 0px ${t.colors.toggleIcon}`,
         "&:before": {
           content: `""`,
           position: `absolute`,
@@ -54,10 +56,13 @@ const ColorModeToggle = ({ isDark, toggle }: Props) => (
           top: `-9px`,
           height: `24px`,
           width: `24px`,
-          border: (t) => (isDark ? `2px solid ${t.colors.toggleIcon}` : `none`),
+          border: (t) =>
+            props.isDark ? `2px solid ${t.colors.toggleIcon}` : `none`,
           borderRadius: `50%`,
-          transform: isDark ? `translate(14px, -14px)` : `translate(0, 0)`,
-          opacity: isDark ? 0 : 1,
+          transform: props.isDark
+            ? `translate(14px, -14px)`
+            : `translate(0, 0)`,
+          opacity: props.isDark ? 0 : 1,
           transition: `transform 0.45s ease`,
         },
         "&:after": {
@@ -71,7 +76,7 @@ const ColorModeToggle = ({ isDark, toggle }: Props) => (
           left: `50%`,
           boxShadow: (t) =>
             `0 -23px 0 ${t.colors.toggleIcon}, 0 23px 0 ${t.colors.toggleIcon}, 23px 0 0 ${t.colors.toggleIcon}, -23px 0 0 ${t.colors.toggleIcon}, 15px 15px 0 ${t.colors.toggleIcon}, -15px 15px 0 ${t.colors.toggleIcon}, 15px -15px 0 ${t.colors.toggleIcon}, -15px -15px 0 ${t.colors.toggleIcon}`,
-          transform: isDark ? `scale(1)` : `scale(0)`,
+          transform: props.isDark ? `scale(1)` : `scale(0)`,
           transition: `all 0.35s ease`,
         },
       }}

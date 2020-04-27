@@ -3,16 +3,17 @@ import React from "react";
 import { jsx, Styled } from "theme-ui";
 import {
   Container,
+  Box,
   Text,
   Flex,
   Heading,
   Embed,
   Grid,
   Divider,
-  Link,
 } from "@theme-ui/components";
-import { Link as GatsbyLink, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import GatsbyImage from "gatsby-image";
+import Link from "./link";
 import Layout from "./layout";
 import Title from "./title";
 import Orari from "./orari";
@@ -67,8 +68,9 @@ const MainSectionContainer = (props: SectionContainerProps) => {
   );
   const right = (
     <Flex sx={{ width: "100%", maxHeight: "xs", height: "100%" }}>
-      <Styled.div
+      <Box
         as={props.image}
+        // @ts-ignore: the `height` prop is passed to the image component
         height="auto"
         sx={{
           '[data-fill="primary"]': {
@@ -142,7 +144,7 @@ const Homepage = ({ posts }: PostsProps) => {
 
   return (
     <Layout>
-      <Styled.div
+      <Box
         as="section"
         sx={{
           mt: [3, 4],
@@ -221,8 +223,8 @@ const Homepage = ({ posts }: PostsProps) => {
           src="//player.vimeo.com/video/101507282?title=0&byline=0&portrait=0&color=ffffff"
           sx={{ mt: [6, 5] }}
         />
-      </Styled.div>
-      <Styled.div
+      </Box>
+      <Box
         as="section"
         sx={{
           mb: [5, 5, 6],
@@ -238,26 +240,20 @@ const Homepage = ({ posts }: PostsProps) => {
           }}
         >
           <Styled.p>
-            <Link as={GatsbyLink} to="/servizi">
-              Leggi tutte le informazioni sui servizi
-            </Link>
+            <Link to="/servizi">Leggi tutte le informazioni sui servizi</Link>
           </Styled.p>
         </Flex>
-      </Styled.div>
-      <Styled.div
+      </Box>
+      <Box
         as="section"
         sx={{
           mb: [5, 5, 6],
         }}
       >
         <Title text="Vieni a trovarci" />
-        <Styled.div
-          sx={{
-            mb: [3, 4],
-          }}
-        >
+        <Box sx={{ mb: [3, 4] }}>
           <Embed src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6284.936046488591!2d12.23961778659644!3d45.6644168713948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe76e4ef43b6bd7e7!2sOttica%20Molinari!5e0!3m2!1sen!2sde!4v1587999826384!5m2!1sen!2sde" />
-        </Styled.div>
+        </Box>
         <Flex
           sx={{
             mb: [3, 4],
@@ -286,24 +282,20 @@ const Homepage = ({ posts }: PostsProps) => {
           }}
         >
           <Styled.p>
-            <Link as={GatsbyLink} to="/negozio">
+            <Link to="/negozio">
               Le origini e il successo dell'Ottica Molinari
             </Link>
           </Styled.p>
         </Flex>
-        <Styled.div
-          sx={{
-            mb: [3, 4],
-          }}
-        >
+        <Box sx={{ mb: [3, 4] }}>
           <GatsbyImage fluid={images.file.childImageSharp.fluid} />
-        </Styled.div>
+        </Box>
         <Grid gap={[3, 4]} width={[150, 250]}>
           {images.allFile.nodes.map((node) => (
             <GatsbyImage key={node.id} fluid={node.childImageSharp.fluid} />
           ))}
         </Grid>
-      </Styled.div>
+      </Box>
     </Layout>
   );
 };

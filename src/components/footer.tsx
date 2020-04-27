@@ -1,61 +1,58 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
-import { Link } from "gatsby";
-import useSiteMetadata from "../hooks/use-site-metadata";
+import { jsx } from "theme-ui";
+import { Box, Flex } from "@theme-ui/components";
+import Link from "./link";
 
-const Footer = () => {
-  const { siteTitle } = useSiteMetadata();
-
-  return (
-    <footer
+const Footer = () => (
+  <Flex
+    as="footer"
+    sx={{
+      boxSizing: `border-box`,
+      display: `flex`,
+      justifyContent: `space-between`,
+      mt: [6],
+      mb: [4],
+      color: `secondary`,
+      a: {
+        variant: `links.secondary`,
+      },
+      flexDirection: [`column`, `column`, `row`],
+      variant: `dividers.top`,
+    }}
+  >
+    <div>
+      Copyright &copy; Ottica Molinari {new Date().getFullYear()}
+      <div>P.IVA 00804150266</div>
+    </div>
+    <Flex
       sx={{
-        boxSizing: `border-box`,
-        display: `flex`,
-        justifyContent: `space-between`,
-        mt: [6],
-        mb: [4],
-        color: `secondary`,
-        a: {
-          variant: `links.secondary`,
+        "> * + *": {
+          marginLeft: "8px",
         },
-        flexDirection: [`column`, `column`, `row`],
-        variant: `dividers.top`,
       }}
     >
-      <div>
-        Copyright &copy; Ottica Molinari {new Date().getFullYear()}
-        <div>P.IVA 00804150266</div>
-      </div>
-      <div
-        sx={{
-          "> * + *": {
-            marginLeft: "8px",
-          },
-        }}
-      >
-        <Styled.a as={Link} aria-label="Link to Referenze" to="/referenze">
+      <Box>
+        <Link aria-label="Link to Referenze" to="/referenze">
           Referenze
-        </Styled.a>
-        <Styled.a as={Link} aria-label="Link to Impressum" to="/impressum">
+        </Link>
+      </Box>
+      <Box>
+        <Link aria-label="Link to Impressum" to="/impressum">
           Impressum
-        </Styled.a>
-        <Styled.a
-          as={Link}
-          aria-label="Link to Cookie Policy"
-          to="/cookie-policy"
-        >
+        </Link>
+      </Box>
+      <Box>
+        <Link aria-label="Link to Cookie Policy" to="/cookie-policy">
           Cookie Policy
-        </Styled.a>
-        <Styled.a
-          as={Link}
-          aria-label="Link to Privacy Policy"
-          to="/privacy-policy"
-        >
+        </Link>
+      </Box>
+      <Box>
+        <Link aria-label="Link to Privacy Policy" to="/privacy-policy">
           Privacy Policy
-        </Styled.a>
-      </div>
-    </footer>
-  );
-};
+        </Link>
+      </Box>
+    </Flex>
+  </Flex>
+);
 
 export default Footer;

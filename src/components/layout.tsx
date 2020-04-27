@@ -7,13 +7,12 @@ import { Box } from "@theme-ui/components";
 import SEO from "./seo";
 import Header from "./header";
 import Footer from "./footer";
-import CodeStyles from "../styles/code";
 import SkipNavLink from "./skip-nav";
 import CookieConsent from "./cookie-consent";
 
 type LayoutProps = { children: React.ReactNode; className?: string };
 
-const Layout = ({ children, className }: LayoutProps) => (
+const Layout = (props: LayoutProps) => (
   <Styled.root data-testid="theme-root">
     <Global
       // @ts-ignore
@@ -60,10 +59,10 @@ const Layout = ({ children, className }: LayoutProps) => (
       <Box
         id="skip-nav"
         as="main"
-        css={css({ ...CodeStyles, flex: "1 1 auto", variant: "styles.Main" })}
-        className={className}
+        sx={{ flex: "1 1 auto", variant: "styles.Main" }}
+        className={props.className}
       >
-        {children}
+        {props.children}
       </Box>
       <Footer />
     </Box>

@@ -1,21 +1,27 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx, Styled } from "theme-ui";
-import { Link } from "@theme-ui/components";
 import { Text } from "@theme-ui/components";
-import { Link as GatsbyLink, useStaticQuery, graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "./layout";
+import Link from "./link";
 import Title from "./title";
 import SEO from "./seo";
 
 type PageProps = {
   data: {
     page: {
-      title: string;
       slug: string;
+      title: string;
       excerpt: string;
       body: string;
+    };
+    subpages: {
+      nodes: {
+        slug: string;
+        title: string;
+        description?: string;
+      }[];
     };
   };
 };
@@ -26,7 +32,7 @@ const toWord = (str) =>
 const Page = (props: PageProps) => {
   const breadcrumbs = props.data.page.slug.split("/").filter(Boolean);
   const areBreadcrumbsVisible = breadcrumbs.length > 1;
-  console.log(props);
+
   return (
     <Layout>
       <SEO
@@ -49,9 +55,7 @@ const Page = (props: PageProps) => {
         const partialSlug = breadcrumbs.filter((_, i) => i <= index).join("/");
         return (
           <React.Fragment>
-            <Link as={GatsbyLink} to={partialSlug}>
-              {label}
-            </Link>
+            <Link to={partialSlug}>{label}</Link>
             <Styled.div as="span" sx={{ marginX: 2 }}>
               {"/"}
             </Styled.div>
@@ -63,9 +67,7 @@ const Page = (props: PageProps) => {
         <MDXRenderer>{props.data.page.body}</MDXRenderer>
       </Styled.div>
       {areBreadcrumbsVisible && (
-        <Link as={GatsbyLink} to={`/${breadcrumbs.slice(0, -1).join("/")}`}>
-          Indietro
-        </Link>
+        <Link to={`/${breadcrumbs.slice(0, -1).join("/")}`}>Indietro</Link>
       )}
       {props.data.subpages.nodes.length > 0 && (
         <React.Fragment>
@@ -77,10 +79,10 @@ const Page = (props: PageProps) => {
           <ul>
             {props.data.subpages.nodes.map((page) => (
               <li key={page.slug}>
-                <Link as={GatsbyLink} to={page.slug}>
-                  {page.title}
-                </Link>
-                {page.description && <Text as="span">{`: ${page.description}`}</Text>}
+                <Link to={page.slug}>{page.title}</Link>
+                {page.description && (
+                  <Text as="span">{`: ${page.description}`}</Text>
+                )}
               </li>
             ))}
           </ul>
