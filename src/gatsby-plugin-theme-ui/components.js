@@ -12,12 +12,7 @@ export default {
   Title,
   Orari,
   Contacts,
-  Message: (props) => (
-    <Message
-      {...props}
-      sx={{ p: { fontSize: 1, marginY: [1] }, color: "message" }}
-    />
-  ),
+  Message: props => <Message {...props} variant="messages" />,
   pre: (preProps) => {
     const props = preToCodeBlock(preProps);
     // if there's a codeString and some props, we passed the test

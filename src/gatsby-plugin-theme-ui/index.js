@@ -50,6 +50,7 @@ export default {
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
     muted: tailwind.colors.gray[4],
+    highlight: '#efeffe',
     covid19: {
       background: "#fff4a1",
       heading: tailwind.colors.black,
@@ -195,5 +196,9 @@ export default {
         textDecoration: `underline`,
       },
     },
+  },
+  messages: {
+    p: { fontSize: 1, marginY: [1] },
+    color: "message",
   },
 };
