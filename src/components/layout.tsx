@@ -7,7 +7,6 @@ import { Box } from "@theme-ui/components";
 import SEO from "./seo";
 import Header from "./header";
 import Footer from "./footer";
-import SkipNavLink from "./skip-nav";
 import CookieConsent from "./cookie-consent";
 
 type LayoutProps = { children: React.ReactNode; className?: string };
@@ -44,7 +43,6 @@ const Layout = (props: LayoutProps) => (
       })}
     />
     <SEO />
-    <SkipNavLink>Skip to content</SkipNavLink>
     <Box
       sx={{
         width: "100%",
@@ -65,8 +63,8 @@ const Layout = (props: LayoutProps) => (
         {props.children}
       </Box>
       <Footer />
+      <CookieConsent />
     </Box>
-    <CookieConsent />
   </Styled.root>
 );
 

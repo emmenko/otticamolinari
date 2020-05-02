@@ -66,5 +66,18 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-theme-ui",
     "gatsby-plugin-netlify-cache",
+    {
+      resolve: 'gatsby-plugin-gdpr-tracking',
+      options: {
+        debug: false,
+        environments: ['production', 'development'],
+        googleAnalytics: {
+          trackingId: 'UA-54770790-1',
+          autoStart: false,
+          anonymize: true,
+          controlCookieName: 'gdpr-analytics-enabled',
+        },
+      },
+    },
   ],
 };

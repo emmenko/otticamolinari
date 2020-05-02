@@ -1,65 +1,95 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx, Styled } from "theme-ui";
 import { Box, Flex } from "@theme-ui/components";
+import useMinimalBlogConfig from "../hooks/use-minimal-blog-config";
 import Link from "./link";
 
-const Footer = () => (
-  <Flex
-    as="footer"
-    sx={{
-      boxSizing: `border-box`,
-      display: `flex`,
-      justifyContent: `space-between`,
-      mt: [6],
-      mb: [4],
-      color: `secondary`,
-      a: {
-        variant: `links.secondary`,
-      },
-      flexDirection: [`column`, `column`, `row`],
-      variant: `dividers.top`,
-    }}
-  >
+const Footer = () => {
+  const { externalLinks } = useMinimalBlogConfig();
+  return (
     <Flex
+      as="footer"
       sx={{
-        flexDirection: "column",
-        mb: [3, 3, 0],
-      }}
-    >
-      Copyright &copy; Ottica Molinari {new Date().getFullYear()}
-      <div>P.IVA 00804150266</div>
-    </Flex>
-    <Flex
-      sx={{
-        "> * + *": {
-          marginLeft: [0, "8px"],
-          marginTop: ["8px", 0],
+        boxSizing: `border-box`,
+        display: `flex`,
+        justifyContent: `space-between`,
+        mt: [6],
+        mb: [2],
+        color: `secondary`,
+        a: {
+          variant: `links.navigation`,
         },
-        display: ["block", "flex"],
+        flexDirection: [`column`, `column`, `row`],
+        variant: `dividers.top`,
       }}
     >
-      <Box>
-        <Link aria-label="Link to Referenze" to="/referenze">
-          Referenze
-        </Link>
-      </Box>
-      <Box>
-        <Link aria-label="Link to Impressum" to="/impressum">
-          Impressum
-        </Link>
-      </Box>
-      <Box>
-        <Link aria-label="Link to Cookie Policy" to="/cookie-policy">
-          Cookie Policy
-        </Link>
-      </Box>
-      <Box>
-        <Link aria-label="Link to Privacy Policy" to="/privacy-policy">
-          Privacy Policy
-        </Link>
-      </Box>
+      <Flex
+        sx={{
+          flexDirection: "column",
+          mb: [3, 3, 0],
+        }}
+      >
+        <Box>Copyright &copy; Ottica Molinari {new Date().getFullYear()}</Box>
+        <Box>P.IVA 00804150266</Box>
+      </Flex>
+      <Flex
+        sx={{
+          flexDirection: "column",
+          mb: [3, 3, 0],
+        }}
+      >
+        <Box
+          sx={{
+            display: ["block", "flex"],
+            justifyContent: "flex-end",
+            "> * + *": {
+              marginLeft: [0, "8px"],
+              marginTop: ["8px", 0],
+            },
+          }}
+        >
+          <Box>
+            <Link aria-label="Link to Referenze" to="/referenze">
+              Referenze
+            </Link>
+          </Box>
+          <Box>
+            <Link aria-label="Link to Impressum" to="/impressum">
+              Impressum
+            </Link>
+          </Box>
+          <Box>
+            <Link aria-label="Link to Cookie Policy" to="/cookie-policy">
+              Cookie Policy
+            </Link>
+          </Box>
+          <Box>
+            <Link aria-label="Link to Privacy Policy" to="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: ["block", "flex"],
+            justifyContent: "flex-end",
+            "> * + *": {
+              marginLeft: [0, "8px"],
+              marginTop: ["8px", 0],
+            },
+          }}
+        >
+          {externalLinks.map((link) => (
+            <Box key={link.url}>
+              <Styled.a href={link.url} rel="noopener noreferrer">
+                {link.name}
+              </Styled.a>
+            </Box>
+          ))}
+        </Box>
+      </Flex>
     </Flex>
-  </Flex>
-);
+  );
+};
 
 export default Footer;

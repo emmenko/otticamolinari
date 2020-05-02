@@ -44,7 +44,7 @@ export default {
   useColorSchemeMediaQuery: true,
   colors: {
     ...tailwind.colors,
-    primary: tailwind.colors.purple[7],
+    primary: tailwind.colors.blue[7],
     secondary: `#5f6c80`,
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
@@ -61,19 +61,20 @@ export default {
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
-        primary: tailwind.colors.purple[5],
+        primary: '#ffef72',
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],
         background: `#1A202C`,
         heading: tailwind.colors.white,
         divide: tailwind.colors.gray[8],
         muted: tailwind.colors.gray[8],
+        highlight: '#718096',
         covid19: {
           background: "#FC7F96",
           heading: `#1A202C`,
           text: tailwind.colors.gray[8],
         },
-        message: tailwind.colors.text,
+        message: '#e2e8f0',
         svg: { primary: "#ffef72", secondary: "#7193b3" },
       },
     },
@@ -180,7 +181,7 @@ export default {
     },
   },
   links: {
-    secondary: {
+    navigation: {
       color: `secondary`,
       textDecoration: `none`,
       ":hover": {
@@ -191,18 +192,24 @@ export default {
         color: `heading`,
       },
     },
-    listItem: {
-      fontSize: [1, 2, 3],
-      color: `text`,
-      textDecoration: `none`,
-      ":hover": {
-        color: `heading`,
-        textDecoration: `underline`,
-      },
-    },
   },
   messages: {
-    p: { fontSize: 1, marginY: [1] },
-    color: "message",
+    content: {
+      p: { fontSize: 1, marginY: [1] },
+      color: "message",
+    },
+    cookieConsent: {
+      h3: {
+        mt: 0,
+      },
+      color: "message",
+      fontSize: 1,
+    },
+  },
+  buttons: {
+    close: {
+      width: "auto",
+      height: "auto",
+    },
   },
 };

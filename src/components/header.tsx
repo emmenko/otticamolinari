@@ -9,7 +9,7 @@ import Navigation from "./navigation";
 
 const Header = () => {
   const { siteTitle } = useSiteMetadata();
-  const { navigation: nav, externalLinks } = useMinimalBlogConfig();
+  const { navigation: nav } = useMinimalBlogConfig();
   const [colorMode, setColorMode] = useColorMode();
   const isDark = colorMode === `dark`;
   const toggleColorMode = (e: any) => {
@@ -44,12 +44,8 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
-        <Box sx={{ "> * + *": { ml: 3 }, fontSize: [1, `18px`] }}>
-          {externalLinks.map((link) => (
-            <Styled.a key={link.url} href={link.url} rel="noopener noreferrer">
-              {link.name}
-            </Styled.a>
-          ))}
+        <Box>
+          <Link to="/#vieni-a-trovarci">Vieni a trovarci</Link>
         </Box>
       </Flex>
     </Box>

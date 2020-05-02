@@ -26,7 +26,7 @@ type PageProps = {
   };
 };
 
-const toWord = (str) =>
+const toWord = (str: string) =>
   str.replace(/-/g, " ").replace(/^[a-z]/, (char) => char.toUpperCase());
 
 const Page = (props: PageProps) => {
@@ -45,6 +45,7 @@ const Page = (props: PageProps) => {
         if (isLast) {
           return (
             <Text
+              key={crumb}
               as="span"
               sx={{ visibility: areBreadcrumbsVisible ? "visible" : "hidden" }}
             >
@@ -54,8 +55,8 @@ const Page = (props: PageProps) => {
         }
         const partialSlug = breadcrumbs.filter((_, i) => i <= index).join("/");
         return (
-          <React.Fragment>
-            <Link to={partialSlug}>{label}</Link>
+          <React.Fragment key={crumb}>
+            <Link to={`/${partialSlug}`}>{label}</Link>
             <Styled.div as="span" sx={{ marginX: 2 }}>
               {"/"}
             </Styled.div>

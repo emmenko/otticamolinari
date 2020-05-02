@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import { Box, Flex } from "@theme-ui/components";
+import { Flex } from "@theme-ui/components";
 import Link from "./link";
 
 type NavigationProps = {

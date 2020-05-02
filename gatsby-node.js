@@ -160,19 +160,10 @@ exports.onCreateNode = ({
 };
 
 // These template are only data-fetching wrappers that import components
-const homepageTemplate = require.resolve(`./src/templates/homepage-query.tsx`);
 const pageTemplate = require.resolve(`./src/templates/page-query.tsx`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
-  createPage({
-    path: "/",
-    component: homepageTemplate,
-    context: {
-      formatString: defaultOptions.formatString,
-    },
-  });
 
   const result = await graphql(`
     query {

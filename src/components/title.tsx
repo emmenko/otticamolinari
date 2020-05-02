@@ -8,11 +8,12 @@ type TitleProps = {
   as?: string;
   className?: string;
   text: string;
+  id?: string;
 };
 
-// const Title = ({ text, children, as = `h2`, className }: TitleProps) => (
 const Title = (props: TitleProps) => (
   <Flex
+    id={props.id}
     sx={{
       justifyContent: `space-between`,
       alignItems: `center`,
@@ -42,7 +43,7 @@ const Title = (props: TitleProps) => (
       sx={{
         color: `secondary`,
         a: {
-          variant: `links.secondary`,
+          variant: `links.navigation`,
         },
       }}
     >

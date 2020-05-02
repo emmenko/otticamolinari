@@ -12,6 +12,5 @@ export default {
   Orari,
   Address,
   Contacts,
-  Message: (props) => <Message {...props} variant="messages" />,
-  wrapper: ({ children }) => <>{children}</>,
+  Message: (props) => <Message {...props} variant="messages.content" />,
 };
