@@ -119,7 +119,7 @@ const Homepage = () => {
         nodes {
           id
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -276,7 +276,7 @@ const Homepage = () => {
         <Box sx={{ mb: [3, 4] }}>
           <GatsbyImage fluid={images.file.childImageSharp.fluid} />
         </Box>
-        <Grid gap={[3, 4]} columns={[1, 2, 3]}>
+        <Grid gap={[3, 4]} columns={[1, 2]}>
           {images.allFile.nodes.map((node) => (
             <GatsbyImage key={node.id} fluid={node.childImageSharp.fluid} />
           ))}
