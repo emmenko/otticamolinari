@@ -61,20 +61,20 @@ export default {
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
-        primary: '#ffef72',
+        primary: "#ffef72",
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],
         background: `#1A202C`,
         heading: tailwind.colors.white,
         divide: tailwind.colors.gray[8],
         muted: tailwind.colors.gray[8],
-        highlight: '#718096',
+        highlight: "#718096",
         covid19: {
           background: "#FC7F96",
           heading: `#1A202C`,
           text: tailwind.colors.gray[8],
         },
-        message: '#e2e8f0',
+        message: "#e2e8f0",
         svg: { primary: "#ffef72", secondary: "#7193b3" },
       },
     },
