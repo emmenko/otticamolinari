@@ -42,9 +42,10 @@ const Footer = () => {
           sx={{
             display: ["block", "flex"],
             justifyContent: "flex-end",
+            mb: [2, 0, 0],
             "> * + *": {
-              marginLeft: [0, "8px"],
-              marginTop: ["8px", 0],
+              ml: [0, "8px"],
+              mt: ["8px", 0],
             },
           }}
         >
@@ -74,8 +75,8 @@ const Footer = () => {
             display: ["block", "flex"],
             justifyContent: "flex-end",
             "> * + *": {
-              marginLeft: [0, "8px"],
-              marginTop: ["8px", 0],
+              ml: [0, "8px"],
+              mt: ["8px", 0],
             },
           }}
         >
