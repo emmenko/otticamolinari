@@ -1,0 +1,23 @@
+---
+safe: false # disable custom plugins
+timezone: Europe/Berlin
+encoding: utf-8
+exclude:
+- vendor # http://jekyllrb.com/docs/continuous-integration/#exclude-vendor
+- Gemfile
+- Gemfile.lock
+- Rakefile
+- README.md
+- TODO.md
+highlighter: pygments
+permalink: /servizi/:categories/:title.html
+markdown: redcarpet
+sass:
+  sass_dir: assets/css
+gems:
+- jekyll-sitemap
+title: "Ottica Molinari - Stile e Benessere Visivo"
+description: "Ottica Molinari: optometria comportamentale, visione e postura, training visivo, sport vision, contattologia, ipovisione."
+domain: otticamolinari.it
+base_path: ""
+url: 'https://otticamolinari.it'
