@@ -66,10 +66,9 @@ const CookieConsent = () => {
       <Flex sx={{ alignItems: "center", justifyContent: "space-between" }}>
         <Link to="/cookie-policy">Approfondisci</Link>
         <Button
-          // variant="flat"
           onClick={enableTracking}
           title="Consentisci l'utilizzo di Google Analytics"
-          sx={{ mr: [1], color: 'secondary' }}
+          sx={{ mr: [1], color: 'highlight' }}
         >
           {"Accetta Cookies"}
         </Button>
