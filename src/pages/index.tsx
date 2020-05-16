@@ -53,7 +53,14 @@ const MainSectionContainer = (props: SectionContainerProps) => {
     </Flex>
   );
   const right = (
-    <Flex sx={{ width: "100%", maxHeight: ["unset", "xs"], height: "100%" }}>
+    <Flex
+      sx={{
+        width: ["100%", "auto"],
+        minHeight: ["250px"],
+        maxHeight: ["unset", "xs"],
+        height: "100%",
+      }}
+    >
       <Box
         as={props.image}
         // @ts-ignore: the `height` prop is passed to the image component
@@ -178,7 +185,9 @@ const Homepage = () => {
                 338 5910882
               </Styled.a>
             </Text>
-            <Text as="p">Al momento siamo aperti con i seguenti orari:</Text>
+            <Text as="p">
+              Nuovi orari (<Styled.i>in vigore da Martedì 19 Maggio</Styled.i>):
+            </Text>
             <Orari sx={{ color: "covid19.text" }} />
             <Text as="p">
               Vi ricordiamo che l'ingresso in negozio è possibile con
@@ -252,7 +261,9 @@ const Homepage = () => {
             raggiungibile a piedi (5min dalla stazione) o in auto (la piazza
             offre possibilità di parcheggio).
           </Styled.p>
-          <Styled.p>Al momento siamo aperti con i seguenti orari:</Styled.p>
+          <Styled.p>
+            Nuovi orari (<Styled.i>in vigore da Martedì 19 Maggio</Styled.i>):
+          </Styled.p>
           <Orari />
           <Styled.p>
             Per qualsiasi informazione non esitare a contattarci:

@@ -7,14 +7,29 @@ type Props = {
   className?: string;
 };
 
-const Orari = (props: Props) => (
+const InlineGrid = (props) => (
   <Grid
-    gap={0}
-    columns="150px 1fr"
+    gap={[4, 0, 0, 4]}
+    columns={["1fr 1fr", "1fr", "1fr", "1fr 1fr"]}
     sx={{
       fontSize: 1,
       justifyContent: "center",
       alignItems: "center",
+      fontWeight: "bold",
+    }}
+  >
+    {props.children}
+  </Grid>
+);
+
+const Orari = (props: Props) => (
+  <Grid
+    gap={[1, 1, 0]}
+    columns="150px 1fr"
+    sx={{
+      fontSize: 1,
+      justifyContent: "center",
+      alignItems: ["flex-start", "flex-start", "flex-start", "center"],
       fontWeight: "bold",
     }}
     className={props.className}
@@ -22,15 +37,30 @@ const Orari = (props: Props) => (
     <Text as="span">Lunedì</Text>
     <Text as="span">chiuso</Text>
     <Text as="span">Martedì</Text>
-    <Text as="span">10:00 - 12:30</Text>
+    <InlineGrid>
+      <Text as="span">10:00 - 12:30</Text>
+      <Text as="span">16:00 - 19:00</Text>
+    </InlineGrid>
     <Text as="span">Mercoledì</Text>
-    <Text as="span">10:00 - 12:30</Text>
+    <InlineGrid>
+      <Text as="span">10:00 - 12:30</Text>
+      <Text as="span">16:00 - 19:00</Text>
+    </InlineGrid>
     <Text as="span">Giovedì</Text>
-    <Text as="span">16:00 - 19:00</Text>
+    <InlineGrid>
+      <Text as="span">10:00 - 12:30</Text>
+      <Text as="span">16:00 - 19:00</Text>
+    </InlineGrid>
     <Text as="span">Venerdì</Text>
-    <Text as="span">10:00 - 12:30</Text>
+    <InlineGrid>
+      <Text as="span">10:00 - 12:30</Text>
+      <Text as="span">16:00 - 19:00</Text>
+    </InlineGrid>
     <Text as="span">Sabato</Text>
-    <Text as="span">10:00 - 12:30</Text>
+    <InlineGrid>
+      <Text as="span">10:00 - 12:30</Text>
+      <Text as="span">16:00 - 19:00</Text>
+    </InlineGrid>
     <Text as="span">Domenica</Text>
     <Text as="span">chiuso</Text>
   </Grid>
