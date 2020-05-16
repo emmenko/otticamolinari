@@ -9,8 +9,8 @@ type Props = {
 
 const InlineGrid = (props) => (
   <Grid
-    gap={[0, 0, 0, 4]}
-    columns={["1fr", "1fr", "1fr", "1fr 1fr"]}
+    gap={[4, 0, 0, 4]}
+    columns={["1fr 1fr", "1fr", "1fr", "1fr 1fr"]}
     sx={{
       fontSize: 1,
       justifyContent: "center",

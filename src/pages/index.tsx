@@ -53,7 +53,14 @@ const MainSectionContainer = (props: SectionContainerProps) => {
     </Flex>
   );
   const right = (
-    <Flex sx={{ width: "100%", maxHeight: ["unset", "xs"], height: "100%" }}>
+    <Flex
+      sx={{
+        width: ["100%", "auto"],
+        minHeight: ["250px"],
+        maxHeight: ["unset", "xs"],
+        height: "100%",
+      }}
+    >
       <Box
         as={props.image}
         // @ts-ignore: the `height` prop is passed to the image component
