@@ -21,7 +21,9 @@ const CookieConsent = () => {
   const showCookieConsent =
     cookieConsentStatus !== "true" && cookieConsentStatus !== "false";
   const enableTracking = () => {
-    Cookies.set("gdpr-analytics-enabled", "true");
+    Cookies.set("gdpr-analytics-enabled", "true", {
+      expires: 365, // expire after 1 year
+    });
     // @ts-ignore
     window.trackGoogleAnalytics();
     setCookieConsentStatus("true");
@@ -68,7 +70,7 @@ const CookieConsent = () => {
         <Button
           onClick={enableTracking}
           title="Consentisci l'utilizzo di Google Analytics"
-          sx={{ mr: [1], color: 'highlight' }}
+          sx={{ mr: [1], color: "highlight" }}
         >
           {"Accetta Cookies"}
         </Button>
