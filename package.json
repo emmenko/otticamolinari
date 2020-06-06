@@ -49,5 +49,9 @@
     "remark-unwrap-images": "2.0.0",
     "theme-ui": "0.3.1",
     "typeface-ibm-plex-sans": "0.0.75"
+  },
+  "resolutions": {
+    "**/@mdx-js/mdx": "1.6.5",
+    "**/@mdx-js/react": "1.6.5"
   }
 }
