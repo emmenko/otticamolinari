@@ -22,14 +22,18 @@ const CookieConsent = () => {
     cookieConsentStatus !== "true" && cookieConsentStatus !== "false";
   const enableTracking = () => {
     Cookies.set("gdpr-analytics-enabled", "true", {
-      expires: 365, // expire after 1 year
+      expires: 365 * 2, // expire after 2 years
+      sameSite: "strict",
     });
     // @ts-ignore
     window.trackGoogleAnalytics();
     setCookieConsentStatus("true");
   };
   const closeCookieConsent = () => {
-    Cookies.set("gdpr-analytics-enabled", "false");
+    Cookies.set("gdpr-analytics-enabled", "false", {
+      expires: 365 * 2, // expire after 2 years
+      sameSite: "strict",
+    });
     setCookieConsentStatus("false");
   };
 
