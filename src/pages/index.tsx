@@ -27,6 +27,10 @@ import ProductTourSvg from "../files/svg/undraw_product_tour_foyt.svg";
 // @ts-ignore
 import YogaSvg from "../files/svg/undraw_yoga_248n.svg";
 
+const EyeShakerVideo = () => (
+  <Embed src="//player.vimeo.com/video/433663520?title=0&byline=0&portrait=0&color=ffffff" />
+);
+
 type SectionContainerProps = {
   title: string;
   titleColorTheme?: string;
@@ -161,6 +165,7 @@ const Homepage = () => {
             sx={{
               mt: 4,
               p: { mt: 3, fontSize: ".8rem", color: "covid19.text" },
+              li: { fontSize: ".8rem", color: "covid19.text" },
             }}
           >
             <Text as="p">
@@ -185,10 +190,27 @@ const Homepage = () => {
                 338 5910882
               </Styled.a>
             </Text>
-            <Text as="p">
-              Nuovi orari (<Styled.i>in vigore da Martedì 19 Maggio</Styled.i>):
+            <Text as="p" sx={{ fontWeight: "semibold" }}>
+              Misure di prevenzione:
             </Text>
-            <Orari sx={{ color: "covid19.text" }} />
+            <ul>
+              <li>
+                Ambiente Sanificato 24/24 H con depuratore d'aria che impiega
+                una combinazione esclusiva di tecnologie, compresa la
+                generazione di ioni, un filtro sigillato, ossidazione
+                fotocatalitica e tecnologia ActivePure, efficace contro batteri,
+                virus, polveri e funghi nell'aria e sulle superfici.
+              </li>
+              <li>
+                Disinfettiamo tutte le montature con Germicida UV dopo ogni
+                utilizzo.
+              </li>
+              <li>Disinfettiamo tutte le strumentazioni ad ogni utilizzo.</li>
+              <li>
+                Utilizziamo strumentazioni senza contatto per mantenere le
+                corrette distanze di sicurezza
+              </li>
+            </ul>
             <Text as="p">
               Vi ricordiamo che l'ingresso in negozio è possibile con
               mascherina, guanti e solo una persona adulta alla volta in assenza
@@ -216,6 +238,13 @@ const Homepage = () => {
         />
         <Embed
           src="//player.vimeo.com/video/101507282?title=0&byline=0&portrait=0&color=ffffff"
+          sx={{ mt: [5, 6] }}
+        />
+        <MainSectionContainer
+          title="EYESHAKER"
+          description="Scopri il nuovo modo di pulire gli occhiali con il prodotto EYESHAKER, testato da ZEISS."
+          image={EyeShakerVideo}
+          imagePosition="left"
           sx={{ mt: [5, 6] }}
         />
       </Box>
@@ -260,9 +289,6 @@ const Homepage = () => {
             L'Ottica Molinari è situata in centro storico a Treviso, facilmente
             raggiungibile a piedi (5min dalla stazione) o in auto (la piazza
             offre possibilità di parcheggio).
-          </Styled.p>
-          <Styled.p>
-            Nuovi orari (<Styled.i>in vigore da Martedì 19 Maggio</Styled.i>):
           </Styled.p>
           <Orari />
           <Styled.p>
