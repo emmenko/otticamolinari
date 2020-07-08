@@ -213,7 +213,7 @@ const Homepage = () => {
             </ul>
             <Text as="p">
               Vi ricordiamo che l'ingresso in negozio è possibile con
-              mascherina, guanti e solo una persona adulta alla volta in assenza
+              mascherina e solo una persona adulta alla volta in assenza
               di febbre, tosse o positività al COVID-19.
               <br />
               I minori di anni 14 possono essere accompagnati.
