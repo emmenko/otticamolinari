@@ -2,7 +2,7 @@
   "extends": [
     "config:base",
     ":pinOnlyDevDependencies",
-    "schedule:weekly"
+    "schedule:monthly"
   ],
   "separateMajorMinor": true,
   "packageRules": [
