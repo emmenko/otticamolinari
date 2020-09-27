@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import "typeface-ibm-plex-sans";
 import React from "react";
-import { Global } from "@emotion/core";
 import { jsx, Styled, css } from "theme-ui";
 import { Box } from "@theme-ui/components";
 import SEO from "./seo";
@@ -15,35 +14,6 @@ const Layout = (props: LayoutProps) => {
   const isClient = typeof window !== "undefined";
   return (
     <Styled.root data-testid="theme-root">
-      <Global
-        // @ts-ignore
-        styles={css({
-          "*": {
-            boxSizing: `inherit`,
-          },
-          body: {
-            margin: 0,
-            padding: 0,
-            boxSizing: `border-box`,
-            textRendering: `optimizeLegibility`,
-          },
-          "::selection": {
-            backgroundColor: `primary`,
-            color: `white`,
-          },
-          a: {
-            transition: `all 0.3s ease-in-out`,
-            color: `text`,
-          },
-          figcaption: {
-            textAlign: "center",
-            fontSize: "0.875rem",
-          },
-          address: {
-            fontSize: [1, 2],
-          },
-        })}
-      />
       <SEO />
       <Box
         sx={{
