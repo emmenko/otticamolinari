@@ -19,7 +19,6 @@
   },
   "homepage": "https://otticamolinari.it",
   "dependencies": {
-    "@emotion/core": "10.0.35",
     "@mdx-js/mdx": "1.6.18",
     "@mdx-js/react": "1.6.18",
     "@svgr/webpack": "5.4.0",
@@ -36,7 +35,6 @@
     "gatsby-plugin-react-helmet": "3.3.11",
     "gatsby-plugin-sharp": "2.6.36",
     "gatsby-plugin-theme-ui": "0.3.0",
-    "gatsby-plugin-typescript": "2.4.20",
     "gatsby-remark-images": "3.3.30",
     "gatsby-source-filesystem": "2.3.30",
     "gatsby-transformer-sharp": "2.5.15",
@@ -52,6 +50,7 @@
   },
   "resolutions": {
     "**/@mdx-js/mdx": "1.6.18",
-    "**/@mdx-js/react": "1.6.18"
+    "**/@mdx-js/react": "1.6.18",
+    "**/theme-ui": "0.3.1"
   }
 }
