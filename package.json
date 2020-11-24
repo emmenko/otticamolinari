@@ -42,8 +42,8 @@
     "js-cookie": "2.2.1",
     "lodash.kebabcase": "4.1.1",
     "mkdirp": "1.0.4",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
     "remark-unwrap-images": "2.0.0",
     "theme-ui": "0.3.1"
