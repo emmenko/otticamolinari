@@ -1112,6 +1112,11 @@
     ts-node "^9"
     tslib "^2"
 
+"@fontsource/ibm-plex-sans@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.1.0.tgz#df08c66feeeecd58d4e490a5f3a93fd1e2f6e743"
+  integrity sha512-7I+pDOF+JWRPD8d11mMqnWDZ3miFXKNMd3x2ChvGEoJBrMAgqYpM1NUXhpnRU4ZMHdVzCBhrmZ8gYNmk9vSDYg==
+
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.0.0.tgz#e79d11bd5b39f29172f6ec2eafa71103c6a6c85b"
@@ -6540,11 +6545,6 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
-
-fontsource-ibm-plex-sans@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fontsource-ibm-plex-sans/-/fontsource-ibm-plex-sans-4.0.0.tgz#7a4d571b34d036d5d2e08c5e5be4f7f0f51dd885"
-  integrity sha512-HLkVRnRO5uWPWSHEoi/QZ3b1P1MFYn/8BNtXDYtZ0cS3EYViip47R2sFZZlduAUf+m8h8tKrlQLC3Ianf/+w+A==
 
 for-in@^1.0.2:
   version "1.0.2"
