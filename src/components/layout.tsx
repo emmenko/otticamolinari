@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import "fontsource-ibm-plex-sans/latin.css";
+import "@fontsource/ibm-plex-sans/latin.css";
 import React from "react";
 import { jsx, Styled, css } from "theme-ui";
 import { Box } from "@theme-ui/components";
