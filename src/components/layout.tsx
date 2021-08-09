@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import "@fontsource/ibm-plex-sans/latin.css";
+import "./global-styles.css";
 import React from "react";
-import { jsx, Styled, css } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 import { Box } from "@theme-ui/components";
 import SEO from "./seo";
 import Header from "./header";
@@ -13,7 +14,7 @@ type LayoutProps = { children: React.ReactNode; className?: string };
 const Layout = (props: LayoutProps) => {
   const isClient = typeof window !== "undefined";
   return (
-    <Styled.root data-testid="theme-root">
+    <Themed.root data-testid="theme-root">
       <SEO />
       <Box
         sx={{
@@ -37,7 +38,7 @@ const Layout = (props: LayoutProps) => {
         <Footer />
         {isClient && <CookieConsent />}
       </Box>
-    </Styled.root>
+    </Themed.root>
   );
 };
 

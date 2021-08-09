@@ -66,7 +66,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-theme-ui",
-    "gatsby-plugin-netlify-cache",
     {
       resolve: 'gatsby-plugin-gdpr-tracking',
       options: {

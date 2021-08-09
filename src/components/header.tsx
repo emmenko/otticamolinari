@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Styled } from "theme-ui";
+import { jsx, useColorMode, Themed } from "theme-ui";
 import { Flex, Box } from "@theme-ui/components";
 import useSiteMetadata from "../hooks/use-site-metadata";
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config";
@@ -25,9 +25,9 @@ const Header = () => {
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
         >
-          <Styled.h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
-            <Styled.img src="/logo_400x100.png" sx={{ maxHeight: "48px" }} />
-          </Styled.h1>
+          <Themed.h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
+            <Themed.img src="/logo_400x100.png" sx={{ maxHeight: "48px" }} />
+          </Themed.h1>
         </Link>
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </Flex>

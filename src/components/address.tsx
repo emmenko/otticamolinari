@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 
 const Address = () => (
   <address>
@@ -10,11 +10,11 @@ const Address = () => (
     31100 Treviso (TV), Italy
     <br />
     <abbr title="Telefono">T:</abbr>{" "}
-    <Styled.a href="tel:0422582347">0422 582347</Styled.a>
+    <Themed.a href="tel:0422582347">0422 582347</Themed.a>
     <br />
-    <Styled.a href="mailto:info@otticamolinari.it">
+    <Themed.a href="mailto:info@otticamolinari.it">
       info@otticamolinari.it
-    </Styled.a>
+    </Themed.a>
   </address>
 );
 

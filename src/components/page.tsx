@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react";
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 import { Text } from "@theme-ui/components";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "./layout";
@@ -57,16 +57,16 @@ const Page = (props: PageProps) => {
         return (
           <React.Fragment key={crumb}>
             <Link to={`/${partialSlug}`}>{label}</Link>
-            <Styled.div as="span" sx={{ marginX: 2 }}>
+            <Themed.div as="span" sx={{ marginX: 2 }}>
               {"/"}
-            </Styled.div>
+            </Themed.div>
           </React.Fragment>
         );
       })}
-      <Styled.h1>{props.data.page.title}</Styled.h1>
-      <Styled.div as="section" sx={{ my: 5 }}>
+      <Themed.h1>{props.data.page.title}</Themed.h1>
+      <Themed.div as="section" sx={{ my: 5 }}>
         <MDXRenderer>{props.data.page.body}</MDXRenderer>
-      </Styled.div>
+      </Themed.div>
       {areBreadcrumbsVisible && (
         <Link to={`/${breadcrumbs.slice(0, -1).join("/")}`}>Indietro</Link>
       )}
