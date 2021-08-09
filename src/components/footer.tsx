@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 import { Box, Flex } from "@theme-ui/components";
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config";
 import Link from "./link";
@@ -82,9 +82,9 @@ const Footer = () => {
         >
           {externalLinks.map((link) => (
             <Box key={link.url}>
-              <Styled.a href={link.url} rel="noopener noreferrer">
+              <Themed.a href={link.url} rel="noopener noreferrer">
                 {link.name}
-              </Styled.a>
+              </Themed.a>
             </Box>
           ))}
         </Box>

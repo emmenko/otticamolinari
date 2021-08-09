@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react";
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 import {
   Container,
   Box,
@@ -12,7 +12,7 @@ import {
   Divider,
 } from "@theme-ui/components";
 import { useStaticQuery, graphql } from "gatsby";
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import Link from "../components/link";
 import Layout from "../components/layout";
 import Title from "../components/title";
@@ -116,9 +116,7 @@ const Homepage = () => {
     query GetHomepageImages {
       file(relativePath: { eq: "store-overview.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       allFile(
@@ -130,9 +128,7 @@ const Homepage = () => {
         nodes {
           id
           childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 600, layout: CONSTRAINED)
           }
         }
       }
@@ -175,20 +171,20 @@ const Homepage = () => {
             </Text>
             <Text as="p">
               <abbr title="Telefono">Tel: </abbr>
-              <Styled.a
+              <Themed.a
                 href="tel:0422582347"
                 sx={{ color: "covid19.text", fontWeight: "bold" }}
               >
                 0422 582347
-              </Styled.a>
+              </Themed.a>
               <br />
               <abbr title="Cellulare">Cell: </abbr>
-              <Styled.a
+              <Themed.a
                 href="tel:3385910882"
                 sx={{ color: "covid19.text", fontWeight: "bold" }}
               >
                 338 5910882
-              </Styled.a>
+              </Themed.a>
             </Text>
             <Text as="p" sx={{ fontWeight: "semibold" }}>
               Misure di prevenzione:
@@ -212,9 +208,9 @@ const Homepage = () => {
               </li>
             </ul>
             <Text as="p">
-              Vi ricordiamo che l'ingresso in negozio è possibile con
-              mascherina e solo una persona adulta alla volta in assenza
-              di febbre, tosse o positività al COVID-19.
+              Vi ricordiamo che l'ingresso in negozio è possibile con mascherina
+              e solo una persona adulta alla volta in assenza di febbre, tosse o
+              positività al COVID-19.
               <br />
               I minori di anni 14 possono essere accompagnati.
               <br />
@@ -263,9 +259,9 @@ const Homepage = () => {
             flexDirection: "column",
           }}
         >
-          <Styled.p>
+          <Themed.p>
             <Link to="/servizi">Leggi tutte le informazioni sui servizi</Link>
-          </Styled.p>
+          </Themed.p>
         </Flex>
       </Box>
       <Box
@@ -285,15 +281,15 @@ const Homepage = () => {
             flexDirection: "column",
           }}
         >
-          <Styled.p>
+          <Themed.p>
             L'Ottica Molinari è situata in centro storico a Treviso, facilmente
             raggiungibile a piedi (5min dalla stazione) o in auto (la piazza
             offre possibilità di parcheggio).
-          </Styled.p>
+          </Themed.p>
           <Orari />
-          <Styled.p>
+          <Themed.p>
             Per qualsiasi informazione non esitare a contattarci:
-          </Styled.p>
+          </Themed.p>
           <Contacts />
         </Flex>
         <Divider />
@@ -304,18 +300,25 @@ const Homepage = () => {
             flexDirection: "column",
           }}
         >
-          <Styled.p>
+          <Themed.p>
             <Link to="/negozio">
               Le origini e il successo dell'Ottica Molinari
             </Link>
-          </Styled.p>
+          </Themed.p>
         </Flex>
         <Box sx={{ mb: [3, 4] }}>
-          <GatsbyImage fluid={images.file.childImageSharp.fluid} />
+          <GatsbyImage
+            alt=""
+            image={images.file.childImageSharp.gastbyImageData}
+          />
         </Box>
         <Grid gap={[3, 4]} columns={[1, 2]}>
           {images.allFile.nodes.map((node) => (
-            <GatsbyImage key={node.id} fluid={node.childImageSharp.fluid} />
+            <GatsbyImage
+              key={node.id}
+              alt=""
+              image={node.childImageSharp.gastbyImageData}
+            />
           ))}
         </Grid>
       </Box>

@@ -54,7 +54,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   });
 
   createTypes(`
-    interface Page @nodeInterface {
+    interface Page implements Node {
       id: ID!
       slug: String!
       title: String!

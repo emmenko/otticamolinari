@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 import { Text, Message } from "@theme-ui/components";
 import Title from "../components/title";
 import Orari from "../components/orari";
@@ -15,7 +15,7 @@ const ListItem = (props) => {
       typeof window !== "undefined" && window.location.hash === `#${props.id}`;
     // It's a footnote
     return (
-      <Styled.li
+      <Themed.li
         {...props}
         sx={{
           fontSize: "0.875rem !important",
@@ -32,7 +32,7 @@ const ListItem = (props) => {
   return <li {...props} />;
 };
 
-export default {
+const components = {
   li: ListItem,
   // Custom components
   Text,
@@ -42,3 +42,5 @@ export default {
   Contacts,
   Message: ContentMessage,
 };
+
+export default components;

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui";
+import { jsx, Themed } from "theme-ui";
 
 type Props = {
   isDark: boolean;
@@ -9,7 +9,7 @@ type Props = {
 // Adapted from: https://codepen.io/aaroniker/pen/KGpXZo and https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/Navigation/Navigation.Header.tsx
 
 const ColorModeToggle = (props: Props) => (
-  <Styled.div
+  <Themed.div
     as="button"
     onClick={props.toggle}
     aria-label={props.isDark ? `Activate Light Mode` : `Activate Dark Mode`}
@@ -33,7 +33,7 @@ const ColorModeToggle = (props: Props) => (
       "&:hover, &:focus": { opacity: 1 },
     }}
   >
-    <Styled.div
+    <Themed.div
       sx={{
         position: `relative`,
         width: `24px`,
@@ -81,7 +81,7 @@ const ColorModeToggle = (props: Props) => (
         },
       }}
     />
-  </Styled.div>
+  </Themed.div>
 );
 
 export default ColorModeToggle;

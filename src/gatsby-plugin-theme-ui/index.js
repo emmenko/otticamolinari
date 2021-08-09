@@ -37,11 +37,8 @@ const headingStyles = {
   },
 };
 
-export default {
+const theme = {
   ...tailwind,
-  initialColorMode: `light`,
-  useCustomProperties: true,
-  useColorSchemeMediaQuery: true,
   colors: {
     ...tailwind.colors,
     primary: tailwind.colors.blue[7],
@@ -213,3 +210,5 @@ export default {
     },
   },
 };
+
+export default theme;
