@@ -1,6 +1,9 @@
 [build]
   publish = "public"
-  command = "yarn build"
+  command = "yarn gatsby clean && yarn build"
+
+[build.environment]
+  YARN_VERSION = "1.22.5"
 
 [[plugins]]
 package = "@netlify/plugin-gatsby"
