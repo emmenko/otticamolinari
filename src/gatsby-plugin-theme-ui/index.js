@@ -48,11 +48,6 @@ const theme = {
     divide: tailwind.colors.gray[4],
     muted: tailwind.colors.gray[4],
     highlight: "#efeffe",
-    covid19: {
-      background: "#fff4a1",
-      heading: tailwind.colors.black,
-      text: tailwind.colors.black,
-    },
     message: tailwind.colors.text,
     svg: { primary: "#003c72", secondary: "#FC7F96" },
     modes: {
@@ -66,11 +61,6 @@ const theme = {
         divide: tailwind.colors.gray[8],
         muted: tailwind.colors.gray[8],
         highlight: "#718096",
-        covid19: {
-          background: "#FC7F96",
-          heading: `#1A202C`,
-          text: tailwind.colors.gray[8],
-        },
         message: "#e2e8f0",
         svg: { primary: "#ffef72", secondary: "#7193b3" },
       },
