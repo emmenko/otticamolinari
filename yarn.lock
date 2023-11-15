@@ -9016,9 +9016,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:2.14.0":
-  version: 2.14.0
-  resolution: "gatsby-plugin-mdx@npm:2.14.0"
+"gatsby-plugin-mdx@npm:2.14.1":
+  version: 2.14.1
+  resolution: "gatsby-plugin-mdx@npm:2.14.1"
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/generator": ^7.15.4
@@ -9062,7 +9062,7 @@ __metadata:
     "@mdx-js/react": ^1.0.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 0a7867097cd23ddfbac3897c2e0fbb68287db194176fc523c0f88a1a3be9f712dd425db4530c41c01e6e37eea2ac7a3a31acb64d9a54204d8e35e3a143314eeb
+  checksum: f8157f4b6a30620474db80bc755bbf42108d52727064daf8d1050f81de236bb5e9f903a043ad28932fe38f80d8c7a480dc5d8a591444f63c16ee28597321ecdf
   languageName: node
   linkType: hard
 
@@ -13429,7 +13429,7 @@ __metadata:
     gatsby-plugin-catch-links: 3.14.0
     gatsby-plugin-gdpr-tracking: 1.2.2
     gatsby-plugin-image: 1.14.1
-    gatsby-plugin-mdx: 2.14.0
+    gatsby-plugin-mdx: 2.14.1
     gatsby-plugin-react-helmet: 4.14.0
     gatsby-plugin-sharp: 3.14.1
     gatsby-plugin-theme-ui: 0.12.0
