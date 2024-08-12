@@ -30,6 +30,10 @@ const Footer = () => {
         }}
       >
         <Box>Copyright &copy; Ottica Molinari {new Date().getFullYear()}</Box>
+        <Box>OTTICA MOLINARI PAOLO</Box>
+        <Box>P.ZZA DELLA VITTORIA, 11 - 31100 TREVISO</Box>
+        <Box>Registro imprese: 1996/243068</Box>
+        <Box>REA: TV - 129925</Box>
         <Box>P.IVA 00804150266</Box>
       </Flex>
       <Flex
