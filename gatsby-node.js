@@ -238,7 +238,17 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
             // See related PR: https://github.com/smooth-code/svgr/pull/137
             icon: false,
             svgoConfig: {
-              plugins: [{ removeViewBox: false }, { cleanupIDs: true }],
+              plugins: [
+                {
+                  // https://github.com/svg/svgo#default-preset
+                  name: 'preset-default',
+                  params: {
+                    overrides: {
+                      removeViewBox: false,
+                    },
+                  },
+                },
+              ],
             },
           },
         },

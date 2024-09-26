@@ -1,4 +1,9 @@
 module.exports = {
+  flags: {
+    DEV_SSR: false, // good for catching bugs when developing, but too slow for productive content authoring
+    FAST_DEV: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+  },
   siteMetadata: {
     siteTitle: "Ottica Molinari",
     siteTitleAlt: "Stile e benessere visivo",
