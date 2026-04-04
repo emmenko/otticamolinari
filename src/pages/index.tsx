@@ -31,6 +31,10 @@ const EyeShakerVideo = () => (
   <Embed src="//player.vimeo.com/video/433663520?title=0&byline=0&portrait=0&color=ffffff" />
 );
 
+const QuestionTimeVideo = () => (
+  <Embed src="//player.vimeo.com/video/101507282?title=0&byline=0&portrait=0&color=ffffff" />
+);
+
 type SectionContainerProps = {
   title: string;
   titleColorTheme?: string;
@@ -158,10 +162,9 @@ const Homepage = () => {
           imagePosition="left"
           sx={{ mt: [5, 6] }}
         />
-        <Embed
-          src="//player.vimeo.com/video/101507282?title=0&byline=0&portrait=0&color=ffffff"
-          sx={{ mt: [5, 6] }}
-        />
+        <Flex sx={{ mt: [5, 6] }}>
+          <Box as={QuestionTimeVideo} />
+        </Flex>
         <MainSectionContainer
           title="EYESHAKER"
           description="Scopri il nuovo modo di pulire gli occhiali con il prodotto EYESHAKER, testato da ZEISS."
