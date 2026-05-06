@@ -68,7 +68,7 @@ const Orari = (props: Props) => (
       <Text as="span">chiuso</Text>
     </Grid>
     <Message sx={{ mt: 2, fontSize: ".8rem" }}>
-      Sabato pomeriggio chiuso durante i mesi di Luglio e Agosto
+      Sabato pomeriggio chiuso
     </Message>
   </React.Fragment>
 );
