@@ -62,14 +62,11 @@ const Orari = (props: Props) => (
       <Text as="span">Sabato</Text>
       <InlineGrid>
         <Text as="span">10:00 - 12:30</Text>
-        <Text as="span">16:00 - 19:00</Text>
+        <Text as="span">chiuso</Text>
       </InlineGrid>
       <Text as="span">Domenica</Text>
       <Text as="span">chiuso</Text>
     </Grid>
-    <Message sx={{ mt: 2, fontSize: ".8rem" }}>
-      Sabato pomeriggio chiuso
-    </Message>
   </React.Fragment>
 );
 
