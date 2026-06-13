@@ -31,7 +31,7 @@
     "gatsby-plugin-catch-links": "3.14.0",
     "gatsby-plugin-gdpr-tracking": "1.2.2",
     "gatsby-plugin-image": "1.14.1",
-    "gatsby-plugin-mdx": "2.14.0",
+    "gatsby-plugin-mdx": "2.14.1",
     "gatsby-plugin-react-helmet": "4.14.0",
     "gatsby-plugin-sharp": "3.14.1",
     "gatsby-plugin-theme-ui": "0.12.0",
