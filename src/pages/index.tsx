@@ -32,7 +32,7 @@ const EyeShakerVideo = () => (
 );
 
 const QuestionTimeVideo = () => (
-  <Embed src="//player.vimeo.com/video/101507282?title=0&byline=0&portrait=0&color=ffffff" />
+  <Embed src="//www.youtube.com/embed/4HitsIiwc90" />
 );
 
 type SectionContainerProps = {
