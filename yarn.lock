@@ -2239,10 +2239,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/ibm-plex-sans@npm:4.5.1":
-  version: 4.5.1
-  resolution: "@fontsource/ibm-plex-sans@npm:4.5.1"
-  checksum: f0dcb8aafd3b171b294fdfbd7828505afa2f7698ecda4168c9019cc10a8bbe4ea425d37beaa038fd349190cd50ee089b7c7d49221e008c007d2f1a45a1c8eff9
+"@fontsource/ibm-plex-sans@npm:5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/ibm-plex-sans@npm:5.3.0"
+  checksum: 01d593dac203f0f2a34e82086d8b276f8c9fe247d57ed61c0cde13c65da5adbada753944ce0cdcf6da7bc058eacd8a15307c7ed058a71bffed09902e46a0d05c
   languageName: node
   linkType: hard
 
@@ -13417,7 +13417,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "otticamolinari@workspace:."
   dependencies:
-    "@fontsource/ibm-plex-sans": 4.5.1
+    "@fontsource/ibm-plex-sans": 5.3.0
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
     "@netlify/plugin-gatsby": 1.0.3
